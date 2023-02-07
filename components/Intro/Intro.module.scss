@@ -1,0 +1,65 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-color: rgba(40, 40, 40, 0.5);
+  position: relative;
+}
+.home_bc {
+  width: 100%;
+  height: 100vh;
+  background: rgba(40, 40, 40, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding-top: 275px;
+  padding-left: 85px;
+  .hr_home{
+    overflow: hidden;
+  }
+  h2 {
+    font-family: "Sweet Mavka Script";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 145px;
+    color: #f4f3e3;
+  }
+  h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 122px;
+    color: #f4f3e3;
+  }
+  hr {
+    width: 439px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #c8b552;
+    border-radius: 20px;
+    animation: 1s anim-lightspeed-in ease forwards;
+  }
+  p {
+    width: 372px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #f4f3e3;
+  }
+  @keyframes anim-lightspeed-in {
+    0% {
+      transform: translateX(-200%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
