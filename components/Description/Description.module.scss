@@ -30,18 +30,18 @@
         margin-top: 83px;
         margin-bottom: 100px;
         color: #F4F3E3;
+        height: 520px;
+        width: 520px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         h3{
             font-size: 15px;
             min-width: 205px;
         }
-        .logo{
-            width: 100%;
-            position: relative;
-        }
         nav, aside{
             position: absolute;
-            top: 30px;
-            left: 70px;
             animation-duration: 1.5s;
             animation-fill-mode: forwards;
             display: flex;
@@ -50,7 +50,6 @@
             visibility: hidden;
         }
         aside{
-            right: 70px;
             text-align: end;
             flex-direction: row-reverse;
             }
@@ -98,11 +97,13 @@
 
 @keyframes load1{
     0%{
-        transform: translate(0);
-        visibility: visible;
+        visibility: hidden;
+        bottom: 45%;
+        left: 45%;
     }
     100%{
-        transform: translate(110px, -180px);
+        bottom: 90%;
+        left: 60%;
         visibility: visible;
     }
 }
@@ -110,22 +111,25 @@
 @keyframes load2{
     50%{
         visibility: hidden;
-        transform: translate(110px, -180px);
+        bottom: 90%;
+        left: 60%;
     }
     100%{
-        transform: translate(230px, -65px);
         visibility: visible;
+        bottom: 70%;
+        left: 85%;
     }
-
 }
 
 @keyframes load3{
     50%{
         visibility: hidden;
-        transform: translate(230px, -65px);
+        bottom: 70%;
+        left: 85%;
     }
     100%{
-        transform: translate(250px, 60px);
+        bottom: 45%;
+        left: 95%;
         visibility: visible;
     }
 
@@ -134,10 +138,12 @@
 @keyframes load4{
     50%{
         visibility: hidden;
-        transform: translate(250px, 60px);
+        bottom: 45%;
+        left: 95%;
     }
     100%{
-        transform: translate(230px, 185px);
+        left: 85%;
+        bottom: 20%;
         visibility: visible;
     }
 }
@@ -146,10 +152,12 @@
 @keyframes load5{
     50%{
         visibility: hidden;
-        transform: translate(230px, 185px);
+        left: 85%;
+        bottom: 20%;
     }
     100%{
-        transform: translate(110px, 310px);
+        left: 60%;
+        bottom: 0;
         visibility: visible;
     }
 }
@@ -157,10 +165,12 @@
 @keyframes load6{
     50%{
         visibility: hidden;
-        transform: translate(110px, 310px);
+        right: 28%;
+        bottom: 0;
     }
     100%{
-        transform: translate(-110px, 310px);
+        right: 60%;
+        bottom: 0;
         visibility: visible;
     }
 }
@@ -168,10 +178,12 @@
 @keyframes load7{
     50%{
         visibility: hidden;
-        transform: translate(-110px, 310px);
+        right: 60%;
+        bottom: 0;
     }
     100%{
-        transform: translate(-230px, 185px);
+        right: 85%;
+        bottom: 20%;
         visibility: visible;
     }
 }
@@ -179,10 +191,12 @@
 @keyframes load8{
     50%{
         visibility: hidden;
-        transform: translate(-230px, 185px);
+        right: 85%;
+        bottom: 20%;
     }
     100%{
-        transform: translate(-250px, 60px);
+        bottom: 45%;
+        right: 95%;
         visibility: visible;
     }
 }
@@ -190,10 +204,12 @@
 @keyframes load9{
     50%{
         visibility: hidden;
-        transform: translate(-250px, 60px);
+        bottom: 45%;
+        right: 95%;
     }
     100%{
-        transform: translate(-230px, -65px);
+        bottom: 70%;
+        right: 85%;
         visibility: visible;
     }
 }
@@ -201,10 +217,12 @@
 @keyframes load10{
     50%{
         visibility: hidden;
-        transform: translate(-230px, -65px);
+        bottom: 70%;
+        right: 85%;
     }
     100%{
-        transform: translate(-110px, -180px);
+        bottom: 90%;
+        right: 60%;
         visibility: visible;
     }
 }
