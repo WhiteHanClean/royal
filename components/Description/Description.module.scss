@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    
+    .main__background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .main__background_opacity{
+        background-color: black;
+        position: absolute;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .main__blocks{
+        position: relative;
+        z-index: 1;
+        margin-top: 83px;
+        margin-bottom: 100px;
+        color: #F4F3E3;
+        h3{
+            font-size: 15px;
+            min-width: 205px;
+        }
+        .logo{
+            width: 100%;
+            position: relative;
+        }
+        nav, aside{
+            position: absolute;
+            top: 30px;
+            left: 70px;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            display: flex;
+            gap: 13px;
+            align-items: center;
+            visibility: hidden;
+        }
+        aside{
+            right: 70px;
+            text-align: end;
+            flex-direction: row-reverse;
+            }
+         .main__blocks__block:nth-child(2){
+            animation-name: load1;
+        }
+        .main__blocks__block:nth-child(3){
+            animation-name: load2;
+            animation-delay: 1s;
+        }
+        .main__blocks__block:nth-child(4){
+            animation-name: load3;
+            animation-delay: 2s;
+        }
+        .main__blocks__block:nth-child(5){
+            animation-name: load4;
+            animation-delay: 3s;
+        }
+        .main__blocks__block:nth-child(6){
+            animation-name: load5;
+            animation-delay: 4s;
+        }
+        .main__blocks__block:nth-child(7){
+            animation-name: load6;
+            animation-delay: 5s;
+        }
+        .main__blocks__block:nth-child(8){
+            animation-name: load7;
+            animation-delay: 6s;
+        }
+        .main__blocks__block:nth-child(9){
+            animation-name: load8;
+            animation-delay: 7s;
+        }
+        .main__blocks__block:nth-child(10){
+            animation-name: load9;
+            animation-delay: 8s;
+        }
+        .main__blocks__block:nth-child(11){
+            animation-name: load10;
+            animation-delay: 9s;
+        }
+    }
+}
+
+@keyframes load1{
+    0%{
+        transform: translate(0);
+        visibility: visible;
+    }
+    100%{
+        transform: translate(110px, -180px);
+        visibility: visible;
+    }
+}
+
+@keyframes load2{
+    50%{
+        visibility: hidden;
+        transform: translate(110px, -180px);
+    }
+    100%{
+        transform: translate(230px, -65px);
+        visibility: visible;
+    }
+
+}
+
+@keyframes load3{
+    50%{
+        visibility: hidden;
+        transform: translate(230px, -65px);
+    }
+    100%{
+        transform: translate(250px, 60px);
+        visibility: visible;
+    }
+
+}
+
+@keyframes load4{
+    50%{
+        visibility: hidden;
+        transform: translate(250px, 60px);
+    }
+    100%{
+        transform: translate(230px, 185px);
+        visibility: visible;
+    }
+}
+
+
+@keyframes load5{
+    50%{
+        visibility: hidden;
+        transform: translate(230px, 185px);
+    }
+    100%{
+        transform: translate(110px, 310px);
+        visibility: visible;
+    }
+}
+
+@keyframes load6{
+    50%{
+        visibility: hidden;
+        transform: translate(110px, 310px);
+    }
+    100%{
+        transform: translate(-110px, 310px);
+        visibility: visible;
+    }
+}
+
+@keyframes load7{
+    50%{
+        visibility: hidden;
+        transform: translate(-110px, 310px);
+    }
+    100%{
+        transform: translate(-230px, 185px);
+        visibility: visible;
+    }
+}
+
+@keyframes load8{
+    50%{
+        visibility: hidden;
+        transform: translate(-230px, 185px);
+    }
+    100%{
+        transform: translate(-250px, 60px);
+        visibility: visible;
+    }
+}
+
+@keyframes load9{
+    50%{
+        visibility: hidden;
+        transform: translate(-250px, 60px);
+    }
+    100%{
+        transform: translate(-230px, -65px);
+        visibility: visible;
+    }
+}
+
+@keyframes load10{
+    50%{
+        visibility: hidden;
+        transform: translate(-230px, -65px);
+    }
+    100%{
+        transform: translate(-110px, -180px);
+        visibility: visible;
+    }
+}

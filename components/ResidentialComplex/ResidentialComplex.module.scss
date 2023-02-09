@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.main{
+    padding: 107px 0 111px 0;
+    min-height: 100vh;
+    font-family: "Montserrat";
+    .main__title{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        h2{
+            font-size: 70px;
+            width: 55%;
+            font-weight: 500;
+            line-height: 70px;
+            padding-bottom: 82px;
+            color: #39383FCC;
+            font-weight: 500;
+            b{
+                color: #C8B552;
+                font-family: 'Sweet Mavka Script';
+                font-weight: 500;
+            }
+        }
+    }
+    hr{
+        border: 3px solid #C8B552;
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 47px;
+    }
+    h6{
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 24px;
+        text-align: center;
+    }
+}
