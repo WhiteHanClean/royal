@@ -1,0 +1,29 @@
+﻿.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 100px 0px 100px;
+  .content {
+    h1 {
+      font-family: "Sweet Mavka Script";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 73px;
+      text-align: center;
+      color: rgba(57, 56, 63, 0.8);
+      margin-bottom: 50px;
+    }
+    .map {
+      display: flex;
+      .iframe {
+        filter: drop-shadow(0px 0px 20px #c8b552);
+        border-radius: 20px;
+        width: 1184px;
+        height: 208px;
+        border: none;
+      }
+    }
+  }
+}
