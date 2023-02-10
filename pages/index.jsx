@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 import Intro from "@/components/Intro/Intro";
 import RoyalService from "@/components/RoyalService/RoyalService";
 import Architecture from "@/components/ArchitectureComponents/Architecture";
+import Location from "@/components/LocationComponents/Location";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Intro />
       <RoyalService />
       <Architecture />
+      <Location />
     </>
   );
 }
