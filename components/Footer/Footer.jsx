@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
             </ul>
             <div className={s.ellipse_blocks}>
-            <div className={s.ellipse}>
+              <div className={s.ellipse}>
                 <a href="#">
                   <Image
                     src="/Vector.png"
@@ -92,7 +92,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className={s.unis}/>
+        <hr className={s.unis} />
         <div className={s.contact_footer}>
           2022 © ОсОО "Роял Констракшн". Юридический адрес: Кыргызская
           Республика, г. Бишкек, ул. Рыскулова, 79Б
