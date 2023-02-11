@@ -1,0 +1,17 @@
+.royal_service{
+    position: relative;
+    .royalService{
+        height: 729px;
+        background: url('../../public/second.png') no-repeat;
+        background-size: cover;
+    }
+    .bc_service{
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
