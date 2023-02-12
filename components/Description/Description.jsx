@@ -2,6 +2,7 @@ import React from "react";
 import style from "./Description.module.scss";
 import Image from "next/image";
 import background from '../../assets/backgroundDescription.jpg'
+import backgroundTwo from '../../assets/descriptionBackgroundTwo.jpg'
 import logo from "../../assets/logo.png";
 import image1 from "../../assets/iconDescriptionOne.png";
 import image2 from "../../assets/iconDescriptionTwo.png";
@@ -18,12 +19,14 @@ const Description = () => {
   return (
     <div className={style.main}>
       <div className={style.main__background}>
-        <Image src={background}/>
+        <Image src={background} alt='background'/>
       </div>
       <div className={style.main__background_opacity}></div>
       <div className={style.main__blocks}>
         <div className={style.logo}>
+          <div>
           <Image src={logo} alt="logo" />
+          </div>
         </div>
         <nav className={style.main__blocks__block}>
           <Image src={image1} alt="description icon" />
