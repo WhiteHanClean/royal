@@ -25,6 +25,18 @@ export default function ResidentialSlider() {
         }}
         modules={[Pagination,  Navigation]}
         simulateTouch={false}
+        breakpoints = {{
+          0: {
+            slidesPerView: 1,
+            loopedSlides: 1,
+            simulateTouch: true
+          },
+          691: {
+            slidesPerView: 3,
+            loopedSlides: 2,
+            simulateTouch: true
+          }
+        }}
         className="residential__slider"
       >
         <SwiperSlide>

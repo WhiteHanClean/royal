@@ -21,10 +21,11 @@
 }
 
 .landscaping__slider .swiper-slide-active{
-    transform: translate(-200px, 4px) !important;
+    transform: translate(0) !important;
     z-index: 1;
     transition: 1.6s;
     height: 80% !important;
+    width: 200% !important;
     opacity: 1;
 }
 

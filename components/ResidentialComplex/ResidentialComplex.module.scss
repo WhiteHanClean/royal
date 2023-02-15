@@ -36,3 +36,36 @@
         text-align: center;
     }
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 485px) {
+    .main{
+        padding: 30px 0 30px 0;
+        .main__title{
+            h2{
+                font-size: 30px;
+                line-height: 40px;
+                padding-bottom: 30px;
+                b{
+                    font-size: 43px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 486px) and (max-width: 728px) {
+    .main{
+        padding: 30px 0 30px 0;
+        .main__title{
+            h2{
+                font-size: 50px;
+                line-height: 50px;
+                padding-bottom: 30px;
+                b{
+                    font-size: 43px;
+                }
+            }
+        }
+    }
+}

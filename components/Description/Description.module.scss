@@ -97,9 +97,9 @@
 
 @keyframes load1{
     0%{
-        visibility: hidden;
         bottom: 45%;
         left: 45%;
+        visibility: hidden;
     }
     100%{
         bottom: 90%;
@@ -110,9 +110,9 @@
 
 @keyframes load2{
     50%{
-        visibility: hidden;
         bottom: 90%;
         left: 60%;
+        visibility: hidden;
     }
     100%{
         visibility: visible;
@@ -123,9 +123,9 @@
 
 @keyframes load3{
     50%{
-        visibility: hidden;
         bottom: 70%;
         left: 85%;
+        visibility: hidden;
     }
     100%{
         bottom: 45%;
@@ -137,9 +137,9 @@
 
 @keyframes load4{
     50%{
-        visibility: hidden;
         bottom: 45%;
         left: 95%;
+        visibility: hidden;
     }
     100%{
         left: 85%;
@@ -151,9 +151,9 @@
 
 @keyframes load5{
     50%{
-        visibility: hidden;
         left: 85%;
         bottom: 20%;
+        visibility: hidden;
     }
     100%{
         left: 60%;
@@ -164,9 +164,9 @@
 
 @keyframes load6{
     50%{
-        visibility: hidden;
         right: 28%;
         bottom: 0;
+        visibility: hidden;
     }
     100%{
         right: 60%;
@@ -177,9 +177,9 @@
 
 @keyframes load7{
     50%{
-        visibility: hidden;
         right: 60%;
         bottom: 0;
+        visibility: hidden;
     }
     100%{
         right: 85%;
@@ -190,9 +190,9 @@
 
 @keyframes load8{
     50%{
-        visibility: hidden;
         right: 85%;
         bottom: 20%;
+        visibility: hidden;
     }
     100%{
         bottom: 45%;
@@ -203,9 +203,9 @@
 
 @keyframes load9{
     50%{
-        visibility: hidden;
         bottom: 45%;
         right: 95%;
+        visibility: hidden;
     }
     100%{
         bottom: 70%;
@@ -216,9 +216,9 @@
 
 @keyframes load10{
     50%{
-        visibility: hidden;
         bottom: 70%;
         right: 85%;
+        visibility: hidden;
     }
     100%{
         bottom: 90%;
@@ -358,7 +358,7 @@
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 719px){
+@media screen and (min-width: 481px) and (max-width: 770px){
     .main{
         height: 170vh;
         justify-content: start !important;
@@ -498,18 +498,62 @@
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 1024px){
+@media screen and (min-width: 771px) and (max-width: 1024px){
+    .main{
+        overflow: hidden !important;
+        background-image: url('../../assets/descriptionBackgroundTwo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .main__background{
+            img{
+                display: none;
+            }
+        }
+    
     .main__blocks{
         width: 50% !important;
         height: 70% !important;
         .main__blocks__block{
             h3{
-                min-width: 120px !important;
+                min-width: 130px;
                 line-height: 20px;
                 font-size: 16px;
                 text-align: center;
             }
         }
+        .main__blocks__block:nth-child(7){
+            h3{
+                min-width: 230px !important;
+            }
+            }
+        .main__blocks__block:nth-child(11){
+            h3{
+                min-width: 230px !important;
+            }
+        }
+        }
     }
-    
-}
+    @keyframes load1{
+        0%{
+            bottom: 45%;
+            left: 45%;
+        }
+        100%{
+            bottom: 89%;
+            left: 60%;
+            visibility: visible;
+        }
+    }
+    @keyframes load6{
+        50%{
+            right: 28%;
+            bottom: 0;
+        }
+        100%{
+            right: 60%;
+            bottom: 0;
+            visibility: visible;
+        }
+    }
+    }
