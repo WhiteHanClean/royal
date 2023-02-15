@@ -3,9 +3,7 @@
   margin: 0;
   padding: 0;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 h1,
 h2,
 h3,
@@ -30,4 +28,13 @@ p {
 .liner {
   top: -100px;
   position: absolute;
+}
+
+@font-face {
+  font-family: "Sweet Mavka Script";
+  src: local("Sweet Mavka Script"),
+    url("../public/Sweetmavkascript.woff2") format("woff2"),
+    url("../public/Sweetmavkascript.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }

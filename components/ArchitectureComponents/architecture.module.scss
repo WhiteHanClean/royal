@@ -1,0 +1,50 @@
+﻿.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 100px 0px 100px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-family: "Sweet Mavka Script";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 73px;
+      text-align: center;
+      color: rgba(57, 56, 63, 0.8);
+      margin-bottom: 57px;
+    }
+    .slider {
+      display: flex;
+    }
+    .info {
+      .tag {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(57, 56, 63, 0.8);
+        a {
+          font-weight: 800;
+        }
+      }
+      .under_tag {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(57, 56, 63, 0.8);
+        a {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
