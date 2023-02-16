@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.main{
+    font-family: "Montserrat";
+    height: 100vh;
+    background: #EEEEED;
+    .title{
+        text-align: center;
+        font-weight: 500;
+        font-size: 50px;
+        color: rgba(57, 56, 63, 0.8);
+        font-family: 'Sweet Mavka Script';
+    }
+    main{
+        display: flex;
+        margin-top: 50px;
+    }
+}

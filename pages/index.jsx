@@ -5,6 +5,9 @@ import Intro from "@/components/Intro/Intro";
 import RoyalService from "@/components/RoyalService/RoyalService";
 import Architecture from "@/components/ArchitectureComponents/Architecture";
 import Location from "@/components/LocationComponents/Location";
+import ResidentialComplex from "@/components/ResidentialComplex/ResidentialComplex";
+import Description from "@/components/Description/Description";
+import Landscaping from "@/components/Landscaping/Landscaping";
 
 export default function Home() {
   return (
@@ -18,7 +21,10 @@ export default function Home() {
       <Intro />
       <RoyalService />
       <Architecture />
-      <Location />
+        <ResidentialComplex />
+        <Description />
+        <Landscaping />
+        <Location />
     </>
   );
 }
