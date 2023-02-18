@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import "swiper/css/pagination"
+import { Navigation, Pagination } from "swiper";
 import slide from '../../assets/slideOne.jpg'
 import slideTwo from '../../assets/slideTwo.jpg'
 import slideThree from '../../assets/slideThree.jpg'
@@ -13,13 +14,16 @@ export default function LandscapingSlider() {
   return (
       <Swiper
         slidesPerView={3}
-        spaceBetween={false}
+        spaceBetween={0}
         centeredSlides={true}
         navigation={true}
         speed={900}
         loopedSlides={2}
         loop={true}
-        modules={[ Navigation]}
+        pagination = {{
+          clickable: false
+        }}
+        modules={[ Navigation, Pagination]}
         simulateTouch={false}
         className="landscaping__slider"
       >

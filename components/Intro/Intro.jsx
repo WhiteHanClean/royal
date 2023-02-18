@@ -3,6 +3,8 @@ import React from "react";
 import AnimatedTextCharacterParagraph from "../AnimatedText/AnimatedParagraph";
 import AnimatedTextCharacter from "../AnimatedText/AnimatedText";
 import s from "./Intro.module.scss";
+import { motion } from "framer-motion";
+
 
 const Intro = () => {
   return (
