@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 import Image from "next/image";
 
-export const FlatPlanning = ({ roomsList, preview = null, flatAreaPreview = null }) => {
+export const FlatPlanning = ({ roomsList = [], preview = null, flatAreaPreview = null }) => {
     return (
         <div className={styles.wrapper}>
             <h1 className={styles.title}>Блок №1, 1-комнатная квартира “А” 49,19 м²</h1>
