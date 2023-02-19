@@ -7,6 +7,7 @@
     border-radius: 11.0881px;
     opacity: 0.6;
     width: 470px;
+    visibility: hidden;
     height: 214px;
     transition: 1s;
 }
@@ -27,6 +28,7 @@
     width: 779.1px;
     height: 363px;
     opacity: 1;
+    visibility: visible;
 }
 
 .residential__slider .swiper-slide-active img{
@@ -37,10 +39,12 @@
 
 .residential__slider .swiper-slide-prev{
     transform: translate(10px, 200px) !important;
+    visibility: visible;
 }
 
 .residential__slider .swiper-slide-next{
     transform: translate(0px, 200px) !important;
+    visibility: visible;
 }
 
 .residential__slider .swiper-button-prev, .residential__slider .swiper-button-next{
@@ -53,7 +57,7 @@
 }
 
 .residential__slider .swiper-button-prev{
-    left: 20% !important;
+    left: 20.9% !important;
 }
 
 .residential__slider .swiper-button-next{
@@ -501,9 +505,15 @@
         opacity: 1;
     }
     .residential__slider .swiper-button-prev{
-        left: 14.1% !important;
+        left: 14.6% !important;
     }
     .residential__slider .swiper-button-next{
         right: 11.2% !important;
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1440px){
+    .residential__slider{
+        height: 75vh;
     }
 }
