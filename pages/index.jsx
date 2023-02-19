@@ -1,9 +1,12 @@
 import Head from "next/head";
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Intro from "@/components/Intro/Intro";
 import RoyalService from "@/components/RoyalService/RoyalService";
 import {Planning} from "@/components/Planning/Planning";
+
+const AroundViewer = dynamic(() => import('../components/AroundViewer/AroundViewer').then(res => res.AroundViewer), { ssr: false })
 
 export default function Home() {
   return (
@@ -14,9 +17,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Intro />
-        <RoyalService/>
-        <Planning />
+      <Intro />
+      <RoyalService/>
+      <Planning />
+      <AroundViewer />
     </>
   );
 }
