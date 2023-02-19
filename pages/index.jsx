@@ -1,4 +1,5 @@
 import Head from "next/head";
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Intro from "@/components/Intro/Intro";
@@ -9,6 +10,8 @@ import ResidentialComplex from "@/components/ResidentialComplex/ResidentialCompl
 import Description from "@/components/Description/Description";
 import Landscaping from "@/components/Landscaping/Landscaping";
 import { Planning } from "@/components/Planning/Planning";
+
+const AroundViewer = dynamic(() => import('../components/AroundViewer/AroundViewer').then(res => res.AroundViewer), { ssr: false })
 
 export default function Home() {
   return (
@@ -25,8 +28,9 @@ export default function Home() {
       <ResidentialComplex />
       <Description />
       <Landscaping />
-      <Location />
       <Planning />
+      <AroundViewer />
+      <Location />
     </>
   );
 }
