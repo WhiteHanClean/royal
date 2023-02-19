@@ -20,7 +20,7 @@ const Header = () => {
                 </a>
               </li>
               <li className={s.hedaer_link}>
-                <a href="#">
+                <a href="#service">
                   <AnimatedTextCharacterParagraph text={"О нас"} />
                 </a>
               </li>
@@ -34,13 +34,13 @@ const Header = () => {
           <div className={s.header_item}>
             <ul>
               <li className={s.hedaer_link}>
-                <a href="#">
-                  <AnimatedTextCharacterParagraph text={"Главная"} />
+                <a href="#architecture">
+                  <AnimatedTextCharacterParagraph text={"Преимущества"} />
                 </a>
               </li>
               <li className={s.hedaer_link}>
-                <a href="#">
-                  <AnimatedTextCharacterParagraph text={"О нас"} />
+                <a href="#planning">
+                  <AnimatedTextCharacterParagraph text={"Планировки"} />
                 </a>
               </li>
             </ul>
