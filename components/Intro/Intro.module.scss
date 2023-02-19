@@ -4,8 +4,6 @@
   background-size: cover;
   background-color: rgba(40, 40, 40, 0.5);
   position: relative;
-  background-image: url("../../public/second.png");
-  background-attachment: fixed;
 }
 
 .home_bc {
@@ -19,7 +17,7 @@
   z-index: 1;
   padding-top: 275px;
   padding-left: 85px;
-  height: 100%;
+  height: 100vh;
   .hr_home {
     overflow: hidden;
   }

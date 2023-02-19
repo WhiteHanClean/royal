@@ -1,8 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import s from "./RoyalService.module.scss";
+import { useEffect, useState } from "react";
 
 const RoyalService = () => {
+
+
   return (
     <div className={s.royal_service}>
       <div className={s.royalService}></div>
