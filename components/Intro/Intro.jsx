@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <>
-      <section className={s.home}>
+      <section className={s.home} id="home">
 
         <div className={s.home_bc}>
           <AnimatedTextCharacter text={"Welcome to"} />

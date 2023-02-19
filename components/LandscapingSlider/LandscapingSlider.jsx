@@ -25,6 +25,19 @@ export default function LandscapingSlider() {
         }}
         modules={[ Navigation, Pagination]}
         simulateTouch={false}
+        breakpoints= {{
+          0: {
+            slidesPerView: 1,
+            loopedSlides: 1,
+            simulateTouch: true
+          },
+          801: {
+            slidesPerView: 3,
+            loopedSlides: 2,
+            simulateTouch: true
+          },
+
+        }}
         className="landscaping__slider"
       >
         <SwiperSlide>

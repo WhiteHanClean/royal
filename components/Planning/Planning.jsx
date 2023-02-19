@@ -50,7 +50,7 @@ export const Planning = () => {
     }
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id='planning'>
             <h1 className={styles.title}>Планировки</h1>
 
             <div className={styles.selector}>

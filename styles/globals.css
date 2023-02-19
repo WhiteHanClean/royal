@@ -18,6 +18,10 @@ p {
   padding: 0;
 }
 
+ul,
+li {
+  list-style: none;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -37,5 +41,5 @@ p {
     url("../public/Sweetmavkascript.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-
 }
+

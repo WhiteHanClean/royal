@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   background-size: cover;
   background-color: rgba(40, 40, 40, 0.5);
   position: relative;
@@ -20,6 +20,21 @@
   padding-top: 275px;
   padding-left: 85px;
   height: 100%;
+  @media (width <= 632px) {
+    & {
+      padding: 120px 20px 0px 20px;
+    }
+
+    & h2 {
+      font-size: 70px !important;
+      line-height: 100px !important;
+    }
+    @media (width <=454px) {
+      & h2 {
+        font-size: 50px !important;
+      }
+    }
+  }
   .hr_home {
     overflow: hidden;
   }
@@ -50,6 +65,9 @@
   .text_home {
     margin-top: 20px;
     width: 442px;
+    @media (width <= 442px) {
+      width: 100%;
+    }
   }
   p {
     width: 14px;
