@@ -30,8 +30,24 @@ const ResidentialComplex = () => {
                 </motion.h2>
             </div>
             <ResidentialSlider />
-            <hr />
-            <h6>·Территория 1 га  ·Этажность 16  ·Высота потолков от 3.1 до 3.45  ·Начало строительства 4 квартал 2022 год</h6>
+            <motion.hr 
+            initial="hidden"
+            whileInView="visible"
+            transition={{duration: 1}}
+            variants={{
+              visible: { opacity: 1, x: 0},
+              hidden: { opacity: 0, x: -600},
+            }}
+            />
+            <motion.h6
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1 }}
+            variants={{
+              visible: { opacity: 1, y: 0},
+              hidden: { opacity: 0, y: -100},
+            }}
+            >·Территория 1 га  ·Этажность 16  ·Высота потолков от 3.1 до 3.45  ·Начало строительства 4 квартал 2022 год</motion.h6>
         </div>
     </section>
   )

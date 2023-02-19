@@ -6,6 +6,7 @@ import Brooklyn from '../../public/brooklyn.jpg';
 import StagePlan from '../../public/plan-stage.png';
 import {FlatPlanning} from "@/components/Planning/components/FlatPlanning/FlatPlanning";
 import {FLATS} from "@/constants/flat-constants";
+import { motion } from 'framer-motion';
 
 
 export const Planning = () => {
@@ -51,7 +52,15 @@ export const Planning = () => {
 
     return (
         <div className={styles.wrapper} id='planning'>
-            <h1 className={styles.title}>Планировки</h1>
+            <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1}}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -50 },
+            }}
+             className={styles.title}>Планировки</motion.h1>
 
             <div className={styles.selector}>
                 <svg width="4098" height="2332" viewBox="0 0 4098 2332" fill="none" xmlns="http://www.w3.org/2000/svg">

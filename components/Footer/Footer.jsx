@@ -1,12 +1,21 @@
 import Image from "next/image";
 import React from "react";
 import s from "./Footer.module.scss";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className="container">
-        <div className={s.footer_info}>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1}}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: -50 },
+          }}
+         className={s.footer_info}>
           <div className={s.footer_item}>
             <Image
               src="/logoFooter.png"
@@ -91,12 +100,28 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-        <hr className={s.unis}/>
-        <div className={s.contact_footer}>
+        </motion.div>
+        <motion.hr 
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 1}}
+        variants={{
+          visible: { opacity: 1, x: 0 },
+          hidden: { opacity: 0, x: -400 },
+        }}
+        className={s.unis}/>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1}}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: -50 },
+          }}
+         className={s.contact_footer}>
           2022 © ОсОО "Роял Констракшн". Юридический адрес: Кыргызская
           Республика, г. Бишкек, ул. Рыскулова, 79Б
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
