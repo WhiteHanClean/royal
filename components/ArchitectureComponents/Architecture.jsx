@@ -1,6 +1,32 @@
 ﻿import s from "./architecture.module.scss";
 import React from "react";
+import Image from 'next/image';
 import { motion } from "framer-motion";
+import 'lightbox.js-react/dist/index.css'
+import { SlideshowLightbox, initLightboxJS } from 'lightbox.js-react'
+import slide1 from '../../public/slide1.png'
+import slide2 from '../../public/slide2.png'
+import slide3 from '../../public/slide3.png'
+import slide4 from '../../public/slide4.png'
+
+const images = [
+    {
+        src: slide1,
+        alt: 'slide1'
+    },
+    {
+        src: slide2,
+        alt: 'slide2'
+    },
+    {
+        src: slide3,
+        alt: 'slide3'
+    },
+    {
+        src: slide4,
+        alt: 'slide4'
+    },
+]
 
 const Architecture = () => {
     return (
@@ -18,7 +44,18 @@ const Architecture = () => {
                     >
                         Архитектура
                     </motion.h1>
-                    <div className={s.slider}></div>
+                    <div className={s.slider}>
+                        <SlideshowLightbox fullScreen={true} imgAnimation="fade" className={s.image} lightboxIdentifier="lightbox1" framework="next" images={images}>
+                            {images.map((image) => (
+                                <Image
+                                    src={image.src}
+                                    alt={image.alt}
+                                    data-lightboxjs="lightbox1"
+                                    quality={100}
+                                />
+                            ))}
+                        </SlideshowLightbox>
+                    </div>
                     <div className={s.info}>
                         <motion.span
                             initial="hidden"

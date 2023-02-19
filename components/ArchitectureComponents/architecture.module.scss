@@ -7,6 +7,8 @@
   .content {
     display: flex;
     flex-direction: column;
+    margin-top: 106px;
+    margin-bottom: 94px;
     h1 {
       font-family: "Sweet Mavka Script";
       font-style: normal;
@@ -19,8 +21,22 @@
     }
     .slider {
       display: flex;
+      .image {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+          width: 25%;
+        }
+        img:last-child {
+          width: 100%;
+        }
+        img:first-child {
+          width: 50%;
+        }
+      }
     }
     .info {
+      margin-top: 36px;
       .tag {
         font-family: "Montserrat";
         font-style: normal;
