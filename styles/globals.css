@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -36,4 +37,5 @@ p {
     url("../public/Sweetmavkascript.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+
 }

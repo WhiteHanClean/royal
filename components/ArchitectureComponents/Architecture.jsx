@@ -1,44 +1,50 @@
 ﻿import s from "./architecture.module.scss";
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-creative";
-import { EffectCreative } from "swiper";
+import React from "react";
+import { motion } from "framer-motion";
 
 const Architecture = () => {
     return (
         <>
             <div className={s.container}>
                 <div className={s.content}>
-                    <h1>Архитектура</h1>
-                    <div className={s.slider}>
-                        <Swiper
-                            grabCursor={true}
-                            effect={"creative"}
-                            creativeEffect={{
-                                prev: {
-                                    shadow: true,
-                                    translate: [0, 0, -400],
-                                },
-                                next: {
-                                    translate: ["100%", 0, 0],
-                                },
-                            }}
-                            modules={[EffectCreative]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide>
-                                <img src="/slide1.png" alt="1" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img src="/slide2.png" alt="" />
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
+                    <motion.h1
+                        initial="hidden"
+                        whileInView="visible"
+                        transition={{ duration: 1 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1 },
+                            hidden: { opacity: 0, scale: 0 },
+                        }}
+                    >
+                        Архитектура
+                    </motion.h1>
+                    <div className={s.slider}></div>
                     <div className={s.info}>
-                        <span className={s.tag}> <a>Внешний облик жилого</a> комплекса <a>BROOKLYN</a> - исполнен в американском стиле</span>
+                        <motion.span
+                            initial="hidden"
+                            whileInView="visible"
+                            transition={{ duration: 1 }}
+                            variants={{
+                                visible: { opacity: 1, scale: 1 },
+                                hidden: { opacity: 0, scale: 0 },
+                            }}
+                            className={s.tag}
+                        >
+                            {" "}
+                            <a>Внешний облик жилого</a> комплекса <a>BROOKLYN</a> - исполнен в
+                            американском стиле
+                        </motion.span>
                         <br />
-                        <span className={s.under_tag}>
+                        <motion.span
+                            initial="hidden"
+                            whileInView="visible"
+                            transition={{ duration: 1 }}
+                            variants={{
+                                visible: { opacity: 1, scale: 1 },
+                                hidden: { opacity: 0, scale: 0 },
+                            }}
+                            className={s.under_tag}
+                        >
                             <br />
                             <a>Фасад:</a> “Вентилируемый фасад” <br />
                             Корзины для кондиционерных блоков <br />
@@ -47,7 +53,7 @@ const Architecture = () => {
                             Благородные натуральные камни <br />
                             Много стекла и металла <br />
                             Панорамные окна
-                        </span>
+                        </motion.span>
                     </div>
                 </div>
             </div>

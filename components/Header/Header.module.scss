@@ -10,6 +10,9 @@
   right: 0;
   font-family: "Montserrat";
   z-index: 2;
+  @media (width <= 1213px) {
+      padding: 0rem 2rem;
+  }
   ul {
     display: flex;
     justify-content: space-around;
