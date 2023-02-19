@@ -6,7 +6,7 @@ const Architecture = () => {
   return (
     <>
       <div className={s.container}>
-        <div className={s.content}>
+        <div className={s.content} id="architecture">
           <motion.h1
             initial="hidden"
             whileInView="visible"

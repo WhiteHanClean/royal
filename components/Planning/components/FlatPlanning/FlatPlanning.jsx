@@ -14,7 +14,7 @@ export const FlatPlanning = ({ roomsList = [], preview = null, flatAreaPreview =
                     <div className={styles.roomsList}>
                         {
                             roomsList.map(({ title, size }, index) => (
-                                <p className={styles.room}>
+                                <p key={title} className={styles.room}>
                                     <span>{index + 1}. {title}</span>
                                     <span>{size}</span>
                                 </p>

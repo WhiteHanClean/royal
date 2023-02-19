@@ -6,7 +6,7 @@ const Location = () => {
     return (
         <>
             <div className={s.container}>
-                <div className={s.content}>
+                <div className={s.content} id='location'>
                     <h1>Расположение</h1>
                     <div className={s.map}>
                         <iframe

@@ -7,7 +7,7 @@ const RoyalService = () => {
 
 
   return (
-    <div className={s.royal_service}>
+    <div className={s.royal_service} id="service">
       <div className={s.royalService}></div>
       <div className={s.bc_service}>
         <div className={s.royal_logo}>
