@@ -22,7 +22,7 @@ const Header = () => {
           </div>
 
           <div>
-            <Image src='/logoRoyal.png' width={179} height={57} alt="logo" />
+            <Image src="/logoRoyal.png" width={179} height={57} alt="logo" />
           </div>
 
           <div className={s.header_item}>
@@ -35,9 +35,13 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className={s.burger} >
+          <div className={s.burger}>
             <label htmlFor="check">
-              <input type="checkbox" onClick={() => setShowNav(!showNav)} id="check" />
+              <input
+                type="checkbox"
+                onClick={() => setShowNav(!showNav)}
+                id="check"
+              />
               <span></span>
               <span></span>
               <span></span>

@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   font-family: "Montserrat";
-  z-index: 2;
+  z-index: 10;
   ul {
     display: flex;
     justify-content: space-around;
@@ -47,7 +47,6 @@
     @media (width <= 690px) {
       .burger {
         display: flex !important;
-        z-index: 10000;
       }
 
       label {
