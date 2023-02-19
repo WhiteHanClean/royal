@@ -1,18 +1,41 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
-p{
+p {
   margin: 0;
   padding: 0;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
+}
+.blocks {
+  position: relative;
+}
+.liner {
+  top: -100px;
+  position: absolute;
+}
+
+@font-face {
+  font-family: "Sweet Mavka Script";
+  src: local("Sweet Mavka Script"),
+    url("../public/Sweetmavkascript.woff2") format("woff2"),
+    url("../public/Sweetmavkascript.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+
 }
