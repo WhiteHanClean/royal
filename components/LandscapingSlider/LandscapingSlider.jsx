@@ -3,10 +3,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"
 import { Navigation, Pagination } from "swiper";
-import slide from '../../assets/slideOne.jpg'
-import slideTwo from '../../assets/slideTwo.jpg'
-import slideThree from '../../assets/slideThree.jpg'
-import slideFour from '../../assets/slideFour.jpg'
+import slide from '../../assets/slideLandscapingOne.jpg'
+import slideTwo from '../../assets/slideLandscapingTwo.jpg'
+import slideThree from '../../assets/slideLandscapingThree.jpg'
+import slideFour from '../../assets/slideLandscapingFour.jpg'
 import Image from "next/image";
 
 

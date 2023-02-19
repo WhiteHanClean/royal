@@ -74,11 +74,11 @@
 }
 
 .landscaping__slider .swiper-button-prev{
-    left: 0px;
+    left: 7px;
 }
 
 .landscaping__slider .swiper-button-next{
-    right: 0px;
+    right: 7px;
 }
 
 .landscaping__slider .swiper-button-prev::after, .landscaping__slider .swiper-button-next::after{
