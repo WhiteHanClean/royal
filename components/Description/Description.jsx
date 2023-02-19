@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import style from "./Description.module.scss";
 import Image from "next/image";
 import background from '../../assets/backgroundDescription.jpg'
@@ -17,57 +18,156 @@ import image10 from "../../assets/iconDescriptionTen.png";
 
 const Description = () => {
   return (
-    <div className={style.main}>
-      <div className={style.main__background}>
+    <div
+     className={style.main}
+     >
+      <div
+       className={style.main__background}>
         <Image src={background} alt='background'/>
       </div>
       <div className={style.main__background_opacity}></div>
       <div className={style.main__blocks}>
-        <div className={style.logo}>
-          <div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.logo}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+           >
           <Image src={logo} alt="logo" />
-          </div>
-        </div>
-        <nav className={style.main__blocks__block}>
+          </motion.div>
+        </motion.div>
+        <motion.nav
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image1} alt="description icon" />
           <h3>Гостевой и подземный паркинг</h3>
-        </nav>
-        <nav className={style.main__blocks__block}>
+        </motion.nav>
+        <motion.nav
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image2} alt="description icon" />
           <h3>Алюминиевые окна теплой серии</h3>
-        </nav>
-        <nav className={style.main__blocks__block}>
+        </motion.nav>
+        <motion.nav
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image3} alt="description icon" />
           <h3>Просторный двор</h3>
-        </nav>
-        <nav className={style.main__blocks__block}>
+        </motion.nav>
+        <motion.nav
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image4} alt="description icon" />
           <h3>Детская площадка европейского стандарта</h3>
-        </nav>
-        <nav className={style.main__blocks__block}>
+        </motion.nav>
+        <motion.nav
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image5} alt="description icon" />
           <h3>Полная газификация</h3>
-        </nav>
-        <aside className={style.main__blocks__block}>
+        </motion.nav>
+        <motion.aside
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image6} alt="description icon" />
           <h3>Круговая шумоизоляция от KNAUF Insulation</h3>
-        </aside>
-        <aside className={style.main__blocks__block}>
+        </motion.aside>
+        <motion.aside
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image7} alt="description icon" />
           <h3>Теплоизоляция наружных стен</h3>
-        </aside>
-        <aside className={style.main__blocks__block}>
+        </motion.aside>
+        <motion.aside 
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+        className={style.main__blocks__block}>
           <Image src={image8} alt="description icon" />
           <h3>Центральное отопление</h3>
-        </aside>
-        <aside className={style.main__blocks__block}>
+        </motion.aside>
+        <motion.aside
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image9} alt="description icon" />
           <h3>Индивидуальная планировка</h3>
-        </aside>
-        <aside className={style.main__blocks__block}>
+        </motion.aside>
+        <motion.aside
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+         className={style.main__blocks__block}>
           <Image src={image10} alt="description icon" />
           <h3>В подъезде 2 лифта европейского стандарта</h3>
-        </aside>
+        </motion.aside>
       </div>
     </div>
   );

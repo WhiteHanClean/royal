@@ -7,20 +7,21 @@
     .main__title{
         text-align: center;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         h2{
             font-size: 70px;
             width: 55%;
             font-weight: 500;
-            line-height: 70px;
+            line-height: 30px;
             padding-bottom: 82px;
             color: #39383FCC;
             font-weight: 500;
-            b{
-                color: #C8B552;
-                font-family: 'Sweet Mavka Script';
-                font-weight: 500;
-            }
+        }
+        h2:last-child{
+            color: #C8B552;
+            font-family: 'Sweet Mavka Script';
+            font-weight: 500;
         }
     }
     hr{
