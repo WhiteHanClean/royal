@@ -5,12 +5,10 @@ import AnimatedTextCharacter from "../AnimatedText/AnimatedText";
 import s from "./Intro.module.scss";
 import { motion } from "framer-motion";
 
-
 const Intro = () => {
   return (
     <>
       <section className={s.home} id="home">
-
         <div className={s.home_bc}>
           <AnimatedTextCharacter text={"Welcome to"} />
           <AnimatedTextCharacter text={"BROOKLYN"} />
