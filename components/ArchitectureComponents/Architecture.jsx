@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { motion } from "framer-motion";
 import 'lightbox.js-react/dist/index.css'
 import { SlideshowLightbox, initLightboxJS } from 'lightbox.js-react'
-import slide1 from '../../public/slide1.png'
-import slide2 from '../../public/slide2.png'
-import slide3 from '../../public/slide3.png'
-import slide4 from '../../public/slide4.png'
+import slide1 from '../../public/slide1.jpg'
+import slide2 from '../../public/slide2.jpg'
+import slide3 from '../../public/slide3.jpg'
+import slide4 from '../../public/slide4.jpg'
 
 const images = [
     {
