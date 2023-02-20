@@ -26,6 +26,14 @@ const images = [
         src: slide4,
         alt: 'slide4'
     },
+    {
+        src: slide4,
+        alt: 'slide4'
+    },
+    {
+        src: slide4,
+        alt: 'slide4'
+    },
 ]
 
 const Architecture = () => {
