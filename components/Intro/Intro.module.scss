@@ -17,22 +17,7 @@
   z-index: 1;
   padding-top: 275px;
   padding-left: 85px;
-  height: 100%;
-  @media (width <= 632px) {
-    & {
-      padding: 120px 20px 0px 20px;
-    }
-
-    & h2 {
-      font-size: 70px !important;
-      line-height: 100px !important;
-    }
-    @media (width <=454px) {
-      & h2 {
-        font-size: 50px !important;
-      }
-    }
-  }
+  height: 100vh;
   .hr_home {
     overflow: hidden;
   }
@@ -86,4 +71,8 @@
       opacity: 1;
     }
   }
+}
+
+--::webkit-media-controls {
+  display:none !important;
 }
