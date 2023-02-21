@@ -23,6 +23,9 @@ const Intro = () => {
             />
           </div>
         </div>
+        <div className={s.button_focus_fixed}>
+          <button className={s.button_focus}>Связаться с нами</button>
+        </div>
       </section>
     </>
   );
