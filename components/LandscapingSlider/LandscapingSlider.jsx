@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"
@@ -25,6 +26,7 @@ export default function LandscapingSlider() {
         }}
         modules={[ Navigation, Pagination]}
         simulateTouch={false}
+
         breakpoints= {{
           0: {
             slidesPerView: 1,
