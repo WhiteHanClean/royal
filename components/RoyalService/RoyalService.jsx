@@ -31,6 +31,8 @@ const RoyalService = () => {
             whileInView="visible"
             transition={{ duration: 0.01, delay: 0.5}}
             variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100},
               visible: { opacity: 1, x: 0, y: 0 },
               hidden: { opacity: 0, x: -100},
             }}
@@ -71,6 +73,8 @@ const RoyalService = () => {
             whileInView="visible"
             transition={{ duration: 0.01, delay: 1.5 }}
             variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100},
               visible: { opacity: 1, x: 0 },
               hidden: { opacity: 0, x: -100},
             }}

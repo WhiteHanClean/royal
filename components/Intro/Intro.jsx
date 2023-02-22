@@ -31,7 +31,7 @@ const Intro = () => {
       <section className={s.home}>
         <video
           ref={videoRef}
-          controls
+          controls={false}
           autoPlay
           muted
           loop
