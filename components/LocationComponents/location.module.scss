@@ -22,9 +22,32 @@
         filter: drop-shadow(0px 0px 20px #c8b552);
         border-radius: 20px;
         width: 1184px;
+        margin: 0 auto;
         height: 208px;
         border: none;
       }
     }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .container{
+    padding: 0 20px 0 20px;
+  .content{
+    h1{
+      font-size: 40px;
+    }
+  }
+  .map{
+    .iframe{
+      width: 100% !important;
+    }
+  }
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1440px){
+  .container{
+    padding: 0px 100px 50px 100px !important;
   }
 }
