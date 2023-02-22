@@ -1265,3 +1265,8 @@ update-browserslist-db@^1.0.10:
   dependencies:
     escalade "^3.1.1"
     picocolors "^1.0.0"
+
+yet-another-react-lightbox@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-2.4.2.tgz#ccc051c563980dadf3823f675a6cbffca681660c"
+  integrity sha512-VJgUZYOFrduAUH9hHO+O54P/zzYaPbHtsGIkI2AifKK8WJxZgSaAMQ4OiREHmQXYq/vm+jr7dVBlPyCQttpCqQ==

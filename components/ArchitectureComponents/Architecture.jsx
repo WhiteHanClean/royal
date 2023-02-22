@@ -1,8 +1,23 @@
 ﻿import s from "./architecture.module.scss";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import sldie1 from "../../public/slide123.png";
+import sldie2 from "../../public//slideR2.png";
+import sldie3 from "../../public/sldieR3.png";
+import sldie4 from "../../public/slideR4.png";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+
+import slide from '../../assets/slideOne.jpg'
+import slideTwo from '../../assets/slideTwo.jpg'
+import slideThree from '../../assets/slideThree.jpg'
+import slideFour from '../../assets/slideFour.jpg'
 
 const Architecture = () => {
+  const [open, setOpen] = useState(false);
+  console.log(slide)
   return (
     <>
       <div className={s.container}>
@@ -30,7 +45,19 @@ const Architecture = () => {
               }}
               className={s.tag}
             >
-              {" "}
+              <div className={s.sliderR_block}>
+                <div className={s.sliderR_slide}>
+                  <Image
+                    onClick={() => setOpen(true)}
+                    className={s.sldie1}
+                    src={sldie1}
+                    alt="logo"
+                  />
+                  <Image onClick={() => setOpen(true)} className={s.sldie2} src={sldie2} alt="logo" />
+                  <Image onClick={() => setOpen(true)} className={s.sldie3} src={sldie3} alt="logo" />
+                </div>
+                <Image onClick={() => setOpen(true)} className={s.sldie4} src={sldie4} alt="logo" />
+              </div>{" "}
               <a>Внешний облик жилого</a> комплекса <a>BROOKLYN</a> - исполнен в
               американском стиле
             </motion.span>
@@ -55,6 +82,17 @@ const Architecture = () => {
               Панорамные окна
             </motion.span>
           </div>
+          <Lightbox
+            open={open}
+            close={() => setOpen(false)}
+            slides={[
+              { src: slide.src },
+              { src: slideTwo.src },
+              { src: slideThree.src },
+              { src: slideFour.src },
+            ]}
+            plugins={[Captions]}
+          />
         </div>
       </div>
     </>

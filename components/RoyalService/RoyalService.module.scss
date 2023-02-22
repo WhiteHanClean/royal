@@ -5,6 +5,7 @@
     height: 729px;
     background: url("../../public/second.png") no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     @media (width <= 852px) {
       height: 1000px;
     }
