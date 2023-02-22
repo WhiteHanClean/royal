@@ -26,7 +26,7 @@ const Footer = () => {
             <p>Фактический адрес: г. Бишкек, ул. Коенкозова, 75</p>
           </div>
           <div className={s.footer_item}>
-            <h4 className={s.title_footer}>Контакты</h4>
+            <h4 className={s.title_footer}>Информация</h4>
             <hr />
             <ul>
               <li>
@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className={s.footer_item}>
-            <h4 className={s.title_footer}>Информация</h4>
+            <h4 className={s.title_footer}>Контакты</h4>
             <hr />
             <ul>
               <li>
@@ -119,7 +119,7 @@ const Footer = () => {
             hidden: { opacity: 0, y: -50 },
           }}
          className={s.contact_footer}>
-          2022 © ОсОО "Роял Констракшн". Юридический адрес: Кыргызская
+          2022 © ОсОО "Роял Констракшн". <br /> Юридический адрес: Кыргызская
           Республика, г. Бишкек, ул. Рыскулова, 79Б
         </motion.div>
       </div>

@@ -76,13 +76,27 @@
   ul {
     display: flex;
     justify-content: space-around;
+    height: 40px;
   }
   ul > li {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+  ul > li::before{
+    content: '';
+    width: 100%;
+    background-color: #c8b552;
+    height: 3px;
+    visibility: hidden;
+    transform: translate(-100%);
+    position: absolute;
+    bottom: 0;
+    transition: 1s;
   }
   li > a {
     text-decoration: none;
@@ -93,9 +107,10 @@
     line-height: 18px;
     color: #f4f3e3;
   }
-  li:hover{
-    border-bottom: 3px solid #c8b552;
-    height: 30px;
+  li:hover::before{
+    visibility: visible !important;
+    transform: translate(0px);
+    transition: 1s;
   }
   .header_container {
     max-width: 1200px;

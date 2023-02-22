@@ -16,13 +16,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? ( */}
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      ) : (
+      {/* ) : (
         <Loading/>
-      )}
+      )} */}
     </>
   );
 }

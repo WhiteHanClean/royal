@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 import s from "./RoyalService.module.scss";
 import { useEffect, useState } from "react";
 
@@ -10,12 +11,30 @@ const RoyalService = () => {
     <div className={s.royal_service} id="service">
       <div className={s.royalService}></div>
       <div className={s.bc_service}>
-        <div className={s.royal_logo}>
+        <motion.div
+          className={s.royal_logo}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: -100 },
+          }}
+        >
           <Image src="/logoSecond.png" width={282} height={257} alt="logo" />
-        </div>
+        </motion.div>
 
         <div className={s.royal_service_content}>
-          <div className={s.content_item}>
+          <motion.div
+            className={s.content_item}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.2 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100},
+            }}
+          >
             <Image
               className={s.content_img0}
               src="/secondStrana.png"
@@ -25,8 +44,17 @@ const RoyalService = () => {
             />
 
             <p>На рынке Кыргызстана с 2012 года</p>
-          </div>
-          <div className={s.content_item}>
+          </motion.div>
+          <motion.div
+            className={s.content_item}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 1 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100 },
+            }}
+          >
             <Image
               className={s.content_img1}
               src="/Group.png"
@@ -36,8 +64,17 @@ const RoyalService = () => {
             />
 
             <p>На рынке Кыргызстана с 2012 года</p>
-          </div>
-          <div className={s.content_item}>
+          </motion.div>
+          <motion.div
+            className={s.content_item}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.1, delay: 1.5 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100},
+            }}
+          >
             <Image
               className={s.content_img2}
               src="/zdanie.png"
@@ -47,7 +84,7 @@ const RoyalService = () => {
             />
 
             <p>На рынке Кыргызстана с 2012 года</p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
