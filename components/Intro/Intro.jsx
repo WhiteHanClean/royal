@@ -57,6 +57,7 @@ const Intro = () => {
               />
             </div>
           </div>
+          </div>
        
         <div className={s.button_focus_fixed}>
           <a href="+996 776 111 444">
