@@ -57,7 +57,7 @@ const Architecture = () => {
                 </div>
                 <Image onClick={() => setOpen(true)} className={s.sldie4} src={sldie4} alt="logo" />
               </div>{" "}
-              <a>Внешний облик жилого</a> комплекса <a>BROOKLYN</a> - исполнен в
+              <a>Внешний облик жилого комплекса BROOKLYN</a> - исполнен в
               американском стиле
             </motion.span>
             <br />
