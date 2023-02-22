@@ -9,7 +9,6 @@ import sldie4 from "../../public/slideR4.png";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
-
 import slide from '../../assets/slideOne.jpg'
 import slideTwo from '../../assets/slideTwo.jpg'
 import slideThree from '../../assets/slideThree.jpg'
