@@ -2,8 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import s from "./RoyalService.module.scss";
+import { useEffect, useState } from "react";
 
 const RoyalService = () => {
+
+
   return (
     <div className={s.royal_service} id="service">
       <div className={s.royalService}></div>
