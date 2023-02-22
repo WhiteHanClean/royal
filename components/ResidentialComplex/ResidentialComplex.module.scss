@@ -53,6 +53,12 @@
                 }
             }
         }
+        h6{
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 0;
+            text-align: center;
+        }
     }
 }
 
@@ -67,6 +73,16 @@
                 b{
                     font-size: 43px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 729px) and (max-width: 990px){
+    .main{
+        .main__title{
+            h2{
+                line-height: 60px;
             }
         }
     }

@@ -12,7 +12,6 @@ const Intro = () => {
         <div className={s.home_bc}>
           <AnimatedTextCharacter text={"Welcome to"} />
           <AnimatedTextCharacter text={"BROOKLYN"} />
-
           <div className={s.hr_home}>
             <hr />
           </div>
@@ -24,7 +23,9 @@ const Intro = () => {
           </div>
         </div>
         <div className={s.button_focus_fixed}>
-          <button className={s.button_focus}>Связаться с нами</button>
+          <a href="+996 776 111 444">
+            <button className={s.button_focus}>Связаться с нами</button>
+          </a>
         </div>
       </section>
     </>

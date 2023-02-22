@@ -31,7 +31,7 @@ const Landscaping = () => {
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: -40 },
@@ -40,7 +40,7 @@ const Landscaping = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 1.5 }}
+              transition={{ duration: 1, delay: 1 }}
               variants={{
                 visible: { opacity: 1, x: 0 },
                 hidden: { opacity: 0, x: -50 },

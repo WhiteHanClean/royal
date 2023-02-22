@@ -26,7 +26,7 @@ const Footer = () => {
             <p>Фактический адрес: г. Бишкек, ул. Коенкозова, 75</p>
           </div>
           <div className={s.footer_item}>
-            <h4 className={s.title_footer}>Контакты</h4>
+            <h4 className={s.title_footer}>Информация</h4>
             <hr />
             <ul>
               <li>
@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className={s.footer_item}>
-            <h4 className={s.title_footer}>Информация</h4>
+            <h4 className={s.title_footer}>Контакты</h4>
             <hr />
             <ul>
               <li>
