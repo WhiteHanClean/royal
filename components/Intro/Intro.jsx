@@ -42,7 +42,9 @@ const Intro = () => {
 
         <div className={s.home_bc}>
           <div>
-            <AnimatedTextCharacter text={"Welcome to"} />
+            <div className={s.intro_title}>
+              <AnimatedTextCharacter text={"Welcome to"} />
+            </div>
             <AnimatedTextCharacter text={"BROOKLYN"} />
 
             <div className={s.hr_home}>
@@ -57,12 +59,9 @@ const Intro = () => {
               />
             </div>
           </div>
-          </div>
-       
+        </div>
         <div className={s.button_focus_fixed}>
-          <a href="+996 776 111 444">
-            <button className={s.button_focus}>Связаться с нами</button>
-          </a>
+          <button className={s.button_focus}>Связаться с нами</button>
         </div>
       </section>
     </>

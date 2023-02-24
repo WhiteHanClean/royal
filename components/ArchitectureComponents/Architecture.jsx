@@ -74,11 +74,15 @@ const Architecture = () => {
                 </div>
                 <Image onClick={() => setOpen(true)} className={s.sldie4} src={sldie4} alt="logo" />
               </div>{" "}
-              <a>Внешний облик жилого</a> комплекса <a>BROOKLYN</a> - исполнен в
+             <div style={{textAlign:"center", fontWeight:"bold"}}>
+             <b>
+             <a>Внешний облик жилого комплекса BROOKLYN</a> - исполнен в
               американском стиле
+             </b>
+             </div>
             </motion.span>
             <br />
-            <motion.span
+            <motion.div
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1 }}
@@ -88,6 +92,7 @@ const Architecture = () => {
               }}
               className={s.under_tag}
             >
+              <div style={{textAlign:'center'}}>
               <br />
               <a>Фасад:</a> “Вентилируемый фасад” <br />
               Корзины для кондиционерных блоков <br />
@@ -96,7 +101,8 @@ const Architecture = () => {
               Благородные натуральные камни <br />
               Много стекла и металла <br />
               Панорамные окна
-            </motion.span>
+              </div>
+            </motion.div>
           </div>
           <Lightbox
             open={open}

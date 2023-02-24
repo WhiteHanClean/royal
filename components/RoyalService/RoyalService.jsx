@@ -29,9 +29,11 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 1, delay: 0.2 }}
+            transition={{ duration: 0.01, delay: 0.5}}
             variants={{
               visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100},
+              visible: { opacity: 1, x: 0, y: 0 },
               hidden: { opacity: 0, x: -100},
             }}
           >
@@ -49,10 +51,10 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 0.01, delay: 1 }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
+              hidden: { opacity: 0, x: -100},
             }}
           >
             <Image
@@ -69,8 +71,10 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.1, delay: 1.5 }}
+            transition={{ duration: 0.01, delay: 1.5 }}
             variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100},
               visible: { opacity: 1, x: 0 },
               hidden: { opacity: 0, x: -100},
             }}
