@@ -4,6 +4,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 100px 100px 0px 100px;
+
   .content {
     display: flex;
     flex-direction: column;
@@ -55,11 +56,9 @@
             }
             .sldie2 {
               width: 50%;
-             
             }
             .sldie3 {
               width: 50%;
-              
             }
           }
           @media screen and (max-width: 700px) {
@@ -70,11 +69,9 @@
             }
             .sldie2 {
               width: 100%;
-             
             }
             .sldie3 {
               width: 100%;
-              
             }
             .sldie4 {
               width: 100%;
@@ -112,3 +109,14 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 0px !important;
+    .sldie1 {
+      display: none;
+    }
+    .sldie4 {
+      display: none;
+    }
+  }
+}
