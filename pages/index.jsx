@@ -31,18 +31,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        
-          <Intro />
-          <RoyalService />
-          <Architecture />
-          <ResidentialComplex />
-          <Description />
-          <Landscaping />
-          <Planning />
-          <AroundViewer />
-          <Location />
-        
-
+        <Intro />
+        <RoyalService />
+        <Architecture />
+        <ResidentialComplex />
+        <Description />
+        <Landscaping />
+        <Planning />
+        <AroundViewer />
+        <Location />
     </>
   );
 }

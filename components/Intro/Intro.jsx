@@ -17,7 +17,6 @@ const Intro = () => {
 
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => {
-    console.log(window.pageYOffset);
     setOffsetY(window.pageYOffset);
   };
 
