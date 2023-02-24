@@ -10,12 +10,12 @@ const Footer = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1}}
+          transition={{ duration: 1 }}
           variants={{
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: -50 },
           }}
-         className={s.footer_info}>
+          className={s.footer_info}>
           <div className={s.footer_item}>
             <Image
               src="/logoFooter.png"
@@ -58,7 +58,7 @@ const Footer = () => {
               </li>
             </ul>
             <div className={s.ellipse_blocks}>
-            <div className={s.ellipse}>
+              <div className={s.ellipse}>
                 <a href="#">
                   <Image
                     src="/Vector.png"
@@ -101,24 +101,24 @@ const Footer = () => {
             </div>
           </div>
         </motion.div>
-        <motion.hr 
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 1}}
-        variants={{
-          visible: { opacity: 1, x: 0 },
-          hidden: { opacity: 0, x: -400 },
-        }}
-        className={s.unis}/>
+        <motion.hr
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: -400 },
+          }}
+          className={s.unis} />
         <motion.div
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1}}
+          transition={{ duration: 1 }}
           variants={{
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: -50 },
           }}
-         className={s.contact_footer}>
+          className={s.contact_footer}>
           2022 © ОсОО "Роял Констракшн". <br /> Юридический адрес: Кыргызская
           Республика, г. Бишкек, ул. Рыскулова, 79Б
         </motion.div>
