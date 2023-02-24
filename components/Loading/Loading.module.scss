@@ -1,15 +1,24 @@
-
 .waviy {
+  display: flex;
   padding-top: 200px;
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: #252424;
-  .waviy_center{
+  .waviy_center {
     text-align: center;
     width: 500px;
     height: 50px;
     margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    .loading_img {
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 100%;
+      height: auto;
+    }
   }
   span {
     font-family: "Bahnschrift", sans-serif;
@@ -30,3 +39,22 @@
   }
 }
 
+@media screen and (max-width: 489px) {
+  .waviy {
+    .waviy_center {
+      span {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .waviy {
+    .waviy_center {
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+}
