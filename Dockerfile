@@ -35,8 +35,8 @@ COPY --from=builder --chown=bloguser:bloggroup /app/.next/static ./.next/static
 
 USER bloguser
 
-EXPOSE 3000
+EXPOSE 80
 
-ENV PORT 3000
+ENV PORT 80
 
 CMD ["node", "server.js"]
