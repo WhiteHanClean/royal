@@ -62,7 +62,7 @@ const Intro = () => {
           </div>
         </div>
         <div className={s.button_focus_fixed}>
-          <button className={s.button_focus}>Связаться с нами</button>
+          <button className={s.button_focus}><a href="https://api.whatsapp.com/send/?phone=996556111444&text&type=phone_number&app_absent=0">Связаться с нами</a></button>
         </div>
       </section>
     </>

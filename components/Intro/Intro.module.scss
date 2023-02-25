@@ -93,12 +93,6 @@
   .button_focus {
     width: 250px;
     height: 60px;
-    font-family: "Montserrat";
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-weight: 700;
-    color: #313133;
     background: #c8b552;
     border: none;
     border-radius: 1000px;
@@ -109,6 +103,16 @@
     position: relative;
     padding: 10px;
     opacity: 0.9;
+    a {
+      letter-spacing: 1.3px;
+
+      text-decoration: none;
+      font-family: "Montserrat";
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #313133;
+    }
   }
 
   .button_focus:hover {

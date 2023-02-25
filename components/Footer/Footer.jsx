@@ -18,7 +18,7 @@ const Footer = () => {
           className={s.footer_info}>
           <div className={s.footer_item}>
             <Image
-            className={s.footer_img}
+              className={s.footer_img}
               src="/logoFooter.png"
               width={188}
               height={171}
@@ -60,7 +60,7 @@ const Footer = () => {
             </ul>
             <div className={s.ellipse_blocks}>
               <div className={s.ellipse}>
-                <a href="#">
+                <a href="https://api.whatsapp.com/send/?phone=996556111444&text&type=phone_number&app_absent=0">
                   <Image
                     src="/Vector.png"
                     width={18}
@@ -70,7 +70,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className={s.ellipse}>
-                <a href="#">
+                <a href="https://www.instagram.com/royal.kg_/">
                   <Image
                     src="/insta.png"
                     width={18}
@@ -80,7 +80,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className={s.ellipse}>
-                <a href="#">
+                <a href="https://www.facebook.com/royalconstructionkg">
                   <Image
                     src="/facebook.png"
                     width={18}
@@ -90,7 +90,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className={s.ellipse}>
-                <a href="#">
+                <a href="https://www.youtube.com/channel/UCpTqbwsumilE7UX1LM1Lpgw?view_as=subscriber">
                   <Image
                     src="/youtube.png"
                     width={22}
