@@ -22,19 +22,20 @@
       overflow: hidden;
     }
     h2 {
-      font-family: "Bahnschrift", sans-serif;
+      font-family: "Sweet Mavka Script";
       font-style: normal;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 100px;
+      font-weight: 500;
       line-height: 145px;
       color: #f4f3e3;
     }
     .intro_title {
       height: 85px;
       h2 {
-        font-size: 54px ;
+        font-size: 80px;
       }
+    }
+    .intro_last_title {
+      margin-top: 20px;
     }
     h1 {
       font-family: "Montserrat";
@@ -170,6 +171,10 @@
     h2 {
       font-size: 100px !important;
     }
+    h1 {
+      font-size: 100px !important;
+    }
+
     .text_home {
       margin-top: 0 !important;
     }
@@ -186,6 +191,10 @@
       font-size: 70px !important;
       line-height: 80px !important;
     }
+    h1 {
+      font-size: 70px !important;
+      line-height: 80px !important;
+    }
     .text_home {
       margin-top: 0 !important;
     }
@@ -198,6 +207,9 @@
   }
   .home_bc {
     padding: 90px 20px 0 20px !important;
+    .intro_last_title {
+      margin-top: 0 !important;
+    }
     hr {
       margin-bottom: 0 !important;
       margin-left: 0 !important;
@@ -206,8 +218,25 @@
       font-size: 50px !important;
       line-height: 65px !important;
     }
+    h1 {
+      font-size: 50px !important;
+      line-height: 65px !important;
+    }
     .text_home {
       margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .home {
+    .home_bc {
+      .text_home {
+        p {
+          font-size: 15px !important;
+          line-height: 15px;
+        }
+      }
     }
   }
 }
@@ -252,6 +281,9 @@
     h2 {
       font-size: 35px !important;
     }
+    h1 {
+      font-size: 35px !important;
+    }
   }
 }
 @media screen and (max-width: 460px) {
@@ -263,12 +295,19 @@
     h2 {
       font-size: 35px !important;
     }
+    h1 {
+      font-size: 35px !important;
+    }
   }
 
   .home_bc {
     padding: 90px 20px 0 20px !important;
 
     h2 {
+      font-size: 40px !important;
+      line-height: 40px !important;
+    }
+    h1 {
       font-size: 40px !important;
       line-height: 40px !important;
     }
@@ -280,7 +319,6 @@
   }
 }
 
-
 @media screen and (min-width: 0px) and (max-width: 359px) {
   .home {
     height: auto;
@@ -288,6 +326,9 @@
   .intro_title {
     height: 40px !important;
     h2 {
+      display: none;
+    }
+    h1 {
       display: none;
     }
   }

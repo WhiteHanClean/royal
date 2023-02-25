@@ -18,6 +18,7 @@ const Footer = () => {
           className={s.footer_info}>
           <div className={s.footer_item}>
             <Image
+            className={s.footer_img}
               src="/logoFooter.png"
               width={188}
               height={171}

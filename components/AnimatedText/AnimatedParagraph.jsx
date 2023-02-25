@@ -37,7 +37,7 @@ const AnimatedTextCharacterParagraph = ({ text }) => {
 
   return (
     <motion.div
-      style={{ display: "flex", flexWrap:"wrap" }}
+      style={{  display: "flex", flexWrap: "wrap" }}
       variants={container}
       initial="hidden"
       animate="visible"

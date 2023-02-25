@@ -47,11 +47,18 @@ li {
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "Bahnschrift";
-  src: local("Bahnschrift"),
-    url("../public/Bahnschrift.ttf") format("ttf");
+  src: local("Bahnschrift"), url("../public/Bahnschrift.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat") url("../public/Montserrat-VariableFont_wght.ttf")
+    format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+

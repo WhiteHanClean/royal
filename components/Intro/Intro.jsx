@@ -5,6 +5,7 @@ import AnimatedTextCharacter from "../AnimatedText/AnimatedText";
 import s from "./Intro.module.scss";
 import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
+import AnimatedLast from "../AnimatedText/AnimatedLast";
 
 const Intro = () => {
   const videoRef = useRef();
@@ -44,8 +45,9 @@ const Intro = () => {
             <div className={s.intro_title}>
               <AnimatedTextCharacter text={"Welcome to"} />
             </div>
-            <AnimatedTextCharacter text={"BROOKLYN"} />
-
+            <div className={s.intro_last_title}>
+              <AnimatedLast text={"BROOKLYN"} />
+            </div>
             <div className={s.hr_home}>
               <hr />
             </div>
