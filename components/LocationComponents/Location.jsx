@@ -9,13 +9,13 @@ const Location = () => {
             <div className={s.container}>
                 <div className={s.content} id='location'>
                     <motion.h1
-                    initial="hidden"
-                    whileInView="visible"
-                    transition={{ duration: 1}}
-                    variants={{
-                      visible: { opacity: 1, y: 0 },
-                      hidden: { opacity: 0, y: -50 },
-                    }}
+                        initial="hidden"
+                        whileInView="visible"
+                        transition={{ duration: 1 }}
+                        variants={{
+                            visible: { opacity: 1, y: 0 },
+                            hidden: { opacity: 0, y: -50 },
+                        }}
                     >Расположение</motion.h1>
                     <div className={s.map}>
                         <iframe

@@ -16,13 +16,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* {loading ? ( */}
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      {/* ) : (
-        <Loading />
-      )} */}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
