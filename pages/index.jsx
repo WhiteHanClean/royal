@@ -22,7 +22,6 @@ const AroundViewer = dynamic(
 );
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -32,17 +31,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Intro />
-        <RoyalService />
-        <Architecture />
-          <ContactUs />
-        <ResidentialComplex />
-        <Description />
-        <Landscaping />
-          <ContactUs />
-        <Planning />
-        <AroundViewer />
-        <Location />
+      <Intro />
+      <RoyalService />
+      <Architecture />
+      <ContactUs />
+      <ResidentialComplex />
+      <Description />
+      <Landscaping />
+      <ContactUs />
+      <Planning />
+      <AroundViewer />
+      <Location />
     </>
   );
 }
