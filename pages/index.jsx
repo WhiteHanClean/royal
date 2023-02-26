@@ -10,6 +10,7 @@ import ResidentialComplex from "@/components/ResidentialComplex/ResidentialCompl
 import Description from "@/components/Description/Description";
 import Landscaping from "@/components/Landscaping/Landscaping";
 import { Planning } from "@/components/Planning/Planning";
+import CallBack from "@/components/CallBackHun/CallBack";
 
 const AroundViewer = dynamic(
   () =>
@@ -38,6 +39,7 @@ export default function Home() {
       <Planning />
       <AroundViewer />
       <Location />
+      <CallBack/>
     </>
   );
 }
