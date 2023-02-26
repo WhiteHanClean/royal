@@ -32,20 +32,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        
-          <Intro />
-          <RoyalService />
-          <Architecture />
+        <Intro />
+        <RoyalService />
+        <Architecture />
           <ContactUs />
-          <ResidentialComplex />
-          <Description />
-          <Landscaping />
+        <ResidentialComplex />
+        <Description />
+        <Landscaping />
           <ContactUs />
-          <Planning />
-          <AroundViewer />
-          <Location />
-        
-
+        <Planning />
+        <AroundViewer />
+        <Location />
     </>
   );
 }

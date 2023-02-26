@@ -9,6 +9,8 @@ import sldie4 from "../../public/slideR4.png";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
 import slide from '../../assets/slideOne.jpg'
 import slideTwo from '../../assets/slideTwo.jpg'
 import slideThree from '../../assets/slideThree.jpg'
@@ -16,6 +18,21 @@ import slideFour from '../../assets/slideFour.jpg'
 
 const Architecture = () => {
   const [open, setOpen] = useState(false);
+  const [animationDuration, setAnimationDuration] = useState(500);
+  const [maxZoomPixelRatio, setMaxZoomPixelRatio] = useState(1);
+  const [zoomInMultiplier, setZoomInMultiplier] = useState(2);
+  const [doubleTapDelay, setDoubleTapDelay] = useState(300);
+  const [doubleClickDelay, setDoubleClickDelay] = useState(300);
+  const [doubleClickMaxStops, setDoubleClickMaxStops] = useState(2);
+  const [keyboardMoveDistance, setKeyboardMoveDistance] = useState(50);
+  const [wheelZoomDistanceFactor, setWheelZoomDistanceFactor] = useState(
+    100
+  );
+  const [pinchZoomDistanceFactor, setPinchZoomDistanceFactor] = React.useState(
+    100
+  );
+  const [scrollToZoom, setScrollToZoom] = React.useState(false);
+
   console.log(slide)
   return (
     <>
@@ -57,16 +74,12 @@ const Architecture = () => {
                 </div>
                 <Image onClick={() => setOpen(true)} className={s.sldie4} src={sldie4} alt="logo" />
               </div>{" "}
-              <motion.a
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1 }}
-              variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: -100},
-              }}
-              >Внешний облик жилого комплекса BROOKLYN</motion.a> - исполнен в
+             <div style={{textAlign:"center", fontWeight:"bold"}}>
+             <b>
+             <a>Внешний облик жилого комплекса BROOKLYN</a> - исполнен в
               американском стиле
+             </b>
+             </div>
             </motion.span>
             <br />
             <motion.div
@@ -79,6 +92,7 @@ const Architecture = () => {
               }}
               className={s.under_tag}
             >
+              <div style={{textAlign:'center'}}>
               <br />
               <a>Фасад:</a> “Вентилируемый фасад” <br />
               Корзины для кондиционерных блоков <br />
@@ -87,18 +101,32 @@ const Architecture = () => {
               Благородные натуральные камни <br />
               Много стекла и металла <br />
               Панорамные окна
+              </div>
             </motion.div>
           </div>
           <Lightbox
             open={open}
             close={() => setOpen(false)}
+            Keyboard
             slides={[
               { src: slide.src },
               { src: slideTwo.src },
               { src: slideThree.src },
               { src: slideFour.src },
             ]}
-            plugins={[Captions]}
+            plugins={[Captions, Zoom]}
+            animation={{ zoom: animationDuration }}
+            zoom={{
+              maxZoomPixelRatio,
+              zoomInMultiplier,
+              doubleTapDelay,
+              doubleClickDelay,
+              doubleClickMaxStops,
+              keyboardMoveDistance,
+              wheelZoomDistanceFactor,
+              pinchZoomDistanceFactor,
+              scrollToZoom
+            }}
           />
         </div>
       </div>

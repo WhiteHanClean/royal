@@ -47,3 +47,11 @@ li {
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: local("Bahnschrift"),
+    url("../public/Bahnschrift.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
