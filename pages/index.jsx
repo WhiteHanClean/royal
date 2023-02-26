@@ -11,6 +11,8 @@ import Description from "@/components/Description/Description";
 import Landscaping from "@/components/Landscaping/Landscaping";
 import { Planning } from "@/components/Planning/Planning";
 import CallBack from "@/components/CallBackHun/CallBack";
+import { useEffect, useState } from "react";
+import ContactUs from "@/components/ContactUs/ContactUs";
 
 const AroundViewer = dynamic(
   () =>
@@ -21,7 +23,6 @@ const AroundViewer = dynamic(
 );
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -33,9 +34,11 @@ export default function Home() {
       <Intro />
       <RoyalService />
       <Architecture />
+      <ContactUs />
       <ResidentialComplex />
       <Description />
       <Landscaping />
+      <ContactUs />
       <Planning />
       <AroundViewer />
       <Location />
