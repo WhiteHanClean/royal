@@ -84,7 +84,6 @@
   }
 
   .button_focus_fixed {
-    display: flex;
     position: fixed;
     bottom: 30px;
     right: 20px;
@@ -319,8 +318,9 @@
   }
 
   .button_focus_fixed {
-    bottom: 30px;
-    left: 13%;
+    display: flex;
+    justify-content: center;
+    left: 0;
   }
 }
 
@@ -345,10 +345,5 @@
       font-size: 40px !important;
       line-height: 40px !important;
     }
-  }
-
-  .button_focus_fixed {
-    bottom: 30px;
-    left: 13%;
   }
 }
