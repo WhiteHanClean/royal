@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from "antd";
 import Image from "next/image";
-import styles from './Style.module.scss';
+import styles from './style.module.scss';
 import Brooklyn from '../../public/brooklyn.jpg';
 import StagePlan from '../../public/plan-stage.jpg';
 import { FlatPlanning } from "@/components/Planning/components/FlatPlanning/FlatPlanning";
