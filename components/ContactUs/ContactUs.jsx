@@ -64,7 +64,7 @@ const ContactUs = () => {
             }}
             className={style.ellipse}
           >
-            <a href="+996 776 111 444">
+            <a href="https://api.whatsapp.com/send/?phone=996556111444&text&type=phone_number&app_absent=0">
               <Image
                 src="/Vector.png"
                 alt="whatsapp logo"
