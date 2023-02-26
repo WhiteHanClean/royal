@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import s from './CallBack.module.scss'
+import s from './Callback.module.scss'
 import classNames from 'classnames';
 
 const CallBack = () => {
