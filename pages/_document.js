@@ -8,6 +8,7 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
+      <script type="text/javascript" async src="https://app.callbackhunter.com/static/cs.min.js?k=NsTn15QvalU58V_31R0yzYWcE3DNlGHb"></script>
     </Html>
   )
 }
