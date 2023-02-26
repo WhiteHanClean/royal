@@ -26,8 +26,8 @@ const Architecture = () => {
             whileInView="visible"
             transition={{ duration: 1 }}
             variants={{
-              visible: { opacity: 1, scale: 1 },
-              hidden: { opacity: 0, scale: 0 },
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100},
             }}
           >
             Архитектура
@@ -57,17 +57,25 @@ const Architecture = () => {
                 </div>
                 <Image onClick={() => setOpen(true)} className={s.sldie4} src={sldie4} alt="logo" />
               </div>{" "}
-              <a>Внешний облик жилого комплекса BROOKLYN</a> - исполнен в
-              американском стиле
-            </motion.span>
-            <br />
-            <motion.span
+              <motion.a
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: -100},
+              }}
+              >Внешний облик жилого комплекса BROOKLYN</motion.a> - исполнен в
+              американском стиле
+            </motion.span>
+            <br />
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: -100},
               }}
               className={s.under_tag}
             >
@@ -79,7 +87,7 @@ const Architecture = () => {
               Благородные натуральные камни <br />
               Много стекла и металла <br />
               Панорамные окна
-            </motion.span>
+            </motion.div>
           </div>
           <Lightbox
             open={open}
