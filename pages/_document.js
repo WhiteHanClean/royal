@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -7,8 +7,13 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script
+            type="text/javascript"
+            async
+            src="https://app.callbackhunter.com/static/cs.min.js?k=NsTn15QvalU58V_31R0yzYWcE3DNlGHb"
+        ></script>
       </body>
-      <script type="text/javascript" async src="https://app.callbackhunter.com/static/cs.min.js?k=NsTn15QvalU58V_31R0yzYWcE3DNlGHb"></script>
+
     </Html>
-  )
+  );
 }
