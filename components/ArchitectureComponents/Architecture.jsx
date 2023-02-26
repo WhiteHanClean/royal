@@ -1,4 +1,4 @@
-﻿import s from "./Architecture.module.scss";
+﻿import s from "./architecture.module.scss";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
