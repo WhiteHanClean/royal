@@ -10,7 +10,6 @@ import ResidentialComplex from "@/components/ResidentialComplex/ResidentialCompl
 import Description from "@/components/Description/Description";
 import Landscaping from "@/components/Landscaping/Landscaping";
 import { Planning } from "@/components/Planning/Planning";
-import { useEffect, useState } from "react";
 
 const AroundViewer = dynamic(
   () =>
@@ -30,16 +29,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-        <Intro />
-        <RoyalService />
-        <Architecture />
-        <ResidentialComplex />
-        <Description />
-        <Landscaping />
-        <Planning />
-        <AroundViewer />
-        <Location />
+      <Intro />
+      <RoyalService />
+      <Architecture />
+      <ResidentialComplex />
+      <Description />
+      <Landscaping />
+      <Planning />
+      <AroundViewer />
+      <Location />
     </>
   );
 }
