@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.scss';
+import styles from './Styles.module.scss';
 import Image from "next/image";
 
 export const FlatPlanning = ({ roomsList = [], preview = null, flatAreaPreview = null }) => {

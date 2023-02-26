@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { ReactPhotoSphereViewer } from "react-photo-sphere-viewer";
-import styles from './styles.module.scss';
+import styles from './Styles.module.scss';
 
 export const AroundViewer = () => {
     const pSRef = React.createRef();

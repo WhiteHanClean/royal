@@ -13,6 +13,7 @@ import { Planning } from "@/components/Planning/Planning";
 import CallBack from "@/components/CallBackHun/CallBack";
 import { useEffect, useState } from "react";
 import ContactUs from "@/components/ContactUs/ContactUs";
+import { outputFileTracing } from "@/next.config";
 
 const AroundViewer = dynamic(
   () =>

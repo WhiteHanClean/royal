@@ -1,4 +1,4 @@
-﻿import s from "./architecture.module.scss";
+﻿import s from "./Architecture.module.scss";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -10,7 +10,6 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-
 import slide from '../../assets/slideOne.jpg'
 import slideTwo from '../../assets/slideTwo.jpg'
 import slideThree from '../../assets/slideThree.jpg'

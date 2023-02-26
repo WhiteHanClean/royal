@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import s from './location.module.scss'
+import s from './Location.module.scss'
 import { motion } from 'framer-motion';
 
 const Location = () => {

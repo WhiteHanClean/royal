@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     outputStandalone: true,
+    outputFileTracingRoot: path.join(__dirname, './')
   },
 }
 
