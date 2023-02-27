@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.cdnfonts.com/css/bahnschrift");
 
 .home {
   width: 100%;
@@ -22,7 +21,8 @@
       overflow: hidden;
     }
     h2 {
-      font-family: "Bahnschrift";
+      font-family: "Bahnschrift", sans-serif;
+      src: local("Bahnschrift"), url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
       font-style: normal;
       font-weight: 500;
       line-height: 145px;
@@ -38,7 +38,7 @@
       margin-top: 20px;
     }
     h1 {
-      font-family: "Bahnschrift";
+      font-family: "Bahnschrift", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 100px;
@@ -55,6 +55,7 @@
       animation: 1s anim-lightspeed-in ease forwards;
     }
     .text_home {
+      font-family: "Bahnschrift", sans-serif !important;
       margin-top: 20px;
       width: 460px;
       margin-left: 20px;

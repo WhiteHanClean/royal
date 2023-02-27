@@ -37,7 +37,7 @@ li {
   top: -100px;
   position: absolute;
 }
-
+/* 
 @font-face {
   font-family: "Sweet Mavka Script";
   src: local("Sweet Mavka Script"),
@@ -45,11 +45,11 @@ li {
     url("../public/Sweetmavkascript.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-}
+} */
 
 @font-face {
-  font-family: "Bahnschrift";
-  src: local("Bahnschrift"), url("../public/Bahnschrift.ttf") format("ttf");
+  font-family: "Bahnschrift", sans-serif !important;
+  src: local("Bahnschrift"), url("../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
 }
