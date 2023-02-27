@@ -7,6 +7,7 @@
     .main__title{
         display: flex;
         flex-direction: column;
+        text-align: center;
         h2{
             font-size: 43.75px;
             width: 100%;
@@ -22,6 +23,11 @@
             font-weight: 500;
             padding-bottom: 82px;
         }
+    }
+
+    .hr{
+        width: 100%;
+        overflow: hidden;
     }
 
     .blockHr{

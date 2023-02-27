@@ -35,7 +35,7 @@ const Intro = () => {
           autoPlay
           muted
           loop
-          style={{ width: "100%" }}
+          style={{ width: "100%"}}
         >
           <source src="/mainS.mp4" />
         </video>

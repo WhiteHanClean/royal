@@ -5,8 +5,6 @@ import s from "./RoyalService.module.scss";
 import { useEffect, useState } from "react";
 
 const RoyalService = () => {
-
-
   return (
     <div className={s.royal_service} id="service">
       <div className={s.royalService}></div>
@@ -23,18 +21,29 @@ const RoyalService = () => {
         >
           <Image src="/logoSecond.png" width={282} height={257} alt="logo" />
         </motion.div>
-
+        <motion.div
+          className={s.title}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: -100 },
+          }}
+        >
+          <h2>СТРОИМ КАК ДЛЯ СЕБЯ</h2>
+        </motion.div>
         <div className={s.royal_service_content}>
           <motion.div
             className={s.content_item}
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.01, delay: 0.5}}
+            transition={{ duration: 0.3, delay: 0.5 }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100},
+              hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0, y: 0 },
-              hidden: { opacity: 0, x: -100},
+              hidden: { opacity: 0, x: -150 },
             }}
           >
             <Image
@@ -51,10 +60,10 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.01, delay: 1 }}
+            transition={{ duration: 0.3, delay: 0.8 }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100},
+              hidden: { opacity: 0, x: -150 },
             }}
           >
             <Image
@@ -71,12 +80,10 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.01, delay: 1.5 }}
+            transition={{ duration: 0.3, delay: 1.1 }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100},
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100},
+              hidden: { opacity: 0, x: -150 },
             }}
           >
             <Image
