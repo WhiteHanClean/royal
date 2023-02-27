@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     h1 {
-      font-family: "Bahnschrift";
+      font-family: "Bahnschrift", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 50px;
@@ -111,12 +111,22 @@
 
 @media screen and (max-width: 550px) {
   .container {
-    padding: 0px !important;
+    padding: 60px 20px 30px 20px;
     .sldie1 {
       display: none;
     }
     .sldie4 {
       display: none;
+    }
+  }
+  .content{
+    h1{
+      font-size: 31.25px !important;
+      line-height: 45px !important;
+      margin-bottom: 15px !important;
+    }
+    h1:nth-child(2){
+      font-size: 50px !important;
     }
   }
 }

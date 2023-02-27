@@ -15,7 +15,7 @@ const Landscaping = () => {
             visible: { opacity: 1, x: 0 },
             hidden: { opacity: 0, x: -100 },
           }}
-          >Благоустройство</motion.h2>
+          >БЛАГОУСТРОЙСТВО</motion.h2>
         </div>
         <main>
           <LandscapingSlider />

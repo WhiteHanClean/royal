@@ -60,7 +60,7 @@ export const Planning = () => {
                     visible: { opacity: 1, x: 0 },
                     hidden: { opacity: 0, x: -50 },
                 }}
-                className={styles.title}>Планировки</motion.h1>
+                className={styles.title}>ПЛАНИРОВКИ</motion.h1>
 
             <div className={styles.selector}>
                 <svg width="4098" height="2332" viewBox="0 0 4098 2332" fill="none" xmlns="http://www.w3.org/2000/svg">

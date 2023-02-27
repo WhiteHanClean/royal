@@ -5,24 +5,23 @@
     min-height: 100vh;
     font-family: "Montserrat";
     .main__title{
-        text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         h2{
-            font-size: 70px;
-            width: 55%;
+            font-size: 43.75px;
+            width: 100%;
             font-weight: 500;
-            line-height: 30px;
-            padding-bottom: 82px;
+            line-height: 70px;
             font-weight: 500;
             color: #C8B552;
-            font-family: 'Bahnschrift';
+            text-align: center !important;
+            font-family: 'Bahnschrift', sans-serif;
         }
         h2:last-child{
             color: #39383FCC;
+            font-size: 70px;
             font-weight: 500;
-            font-family: "Montserrat";
+            padding-bottom: 82px;
         }
     }
 
@@ -37,7 +36,7 @@
     }
     h6{
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 900;
         padding-top: 24px;
         text-align: center;
     }
@@ -46,21 +45,24 @@
 
 @media screen and (min-width: 0px) and (max-width: 485px) {
     .main{
-        padding: 30px 0 30px 0;
+        padding: 50px 0 50px 0;
         .main__title{
             h2{
-                font-size: 35px;
+                font-size: 31.25px;
                 line-height: 40px;
                 padding-bottom: 10px;
-                b{
-                    font-size: 43px;
-                }
             }
+            h2:last-child{
+                font-size: 50px;
+            }
+        }
+        hr{
+            margin-top: 40px;
         }
         h6{
             font-size: 20px;
             font-weight: 600;
-            padding-top: 0;
+            padding-top: 20px;
             text-align: center;
         }
     }

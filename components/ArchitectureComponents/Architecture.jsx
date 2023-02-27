@@ -46,7 +46,10 @@ const Architecture = () => {
               hidden: { opacity: 0, x: -100},
             }}
           >
-            Архитектура
+            АРХИТЕКТУРА ЖИЛОГО КОМПЛЕКСА
+          </motion.h1>
+          <motion.h1>
+            BROOKLYN
           </motion.h1>
           <div className={s.slider}></div>
           <div className={s.info}>
@@ -73,7 +76,7 @@ const Architecture = () => {
                 </div>
                 <Image onClick={() => setOpen(true)} className={s.sldie4} src={sldie4} alt="logo" />
               </div>{" "}
-             <div style={{textAlign:"center", fontWeight:"bold"}}>
+             <div style={{textAlign:"center", fontWeight:"bold", paddingTop: "40px"}}>
              <b>
              <a>Внешний облик жилого комплекса BROOKLYN</a> - исполнен в
               американском стиле

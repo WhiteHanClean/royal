@@ -18,7 +18,7 @@ const ContactUs = () => {
             hidden: { opacity: 0, scale: 0 },
           }}
         >
-          <h2>Задайте интересующий вас вопрос</h2>
+          <h2>ЗАДАЙТЕ ИНТЕРЕСУЮЩИЙ ВАС ВОПРОС</h2>
         </motion.div>
         <div className={style.icons}>
           <motion.div

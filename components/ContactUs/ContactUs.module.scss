@@ -27,7 +27,7 @@
     .icons{
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: 100px;
         padding-top: 60px;
         height: 20vh;
         .ellipse{
@@ -60,6 +60,7 @@
             border: 2px solid #f0dd7d;
             border-radius: 50%;
             animation-name: anim;
+            animation-fill-mode: both;
             animation-duration: 1s;
             position: absolute;
             z-index: 1;
@@ -68,21 +69,10 @@
     }
 }
 
-@keyframes anim {
-    0%{
-        width: 0;
-        height: 0;
-    }
-    100%{
-        border: 1px solid #f0dd7d;
-        width: 150px;
-        height: 150px;
-    }
-}
-
 @media screen and (min-width: 360px) and (max-width: 522px){
     .main{
         height: 100vh !important;
+        margin-top: 40px;
         .container{
             padding: 0 20px 0 20px;
         }

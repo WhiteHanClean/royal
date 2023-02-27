@@ -3,7 +3,6 @@
 .main{
     font-family: "Montserrat";
     min-height: 100vh;
-    background: #EEEEED;
     padding: 100px 0 100px 0;
     .title{
         text-align: center;
@@ -45,7 +44,7 @@
 
 @media screen and (min-width: 0px) and (max-width: 425px){
     .main{
-        padding: 50px 0 50px 0;
+        padding: 60px 0 50px 0;
         .title{
             font-size: 23px;
         }

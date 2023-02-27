@@ -16,7 +16,7 @@ const ResidentialComplex = () => {
               hidden: { opacity: 0, x: -100 },
             }}
           >
-            Жилой комплекс
+            ЖИЛОЙ КОМПЛЕКС
           </motion.h2>
           <motion.h2
             initial="hidden"
