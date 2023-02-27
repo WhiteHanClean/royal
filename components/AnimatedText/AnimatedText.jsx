@@ -37,10 +37,12 @@ const AnimatedTextCharacter = ({ text }) => {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex" }}
+      style={{ overflow: "hidden", display: "flex" , fontFamily: "Bahnschrift", 
+    }}
       variants={container}
       initial="hidden"
       animate="visible"
+
     >
       {letters.map((letter, index) => (
         <motion.h2 variants={child} key={index}>
