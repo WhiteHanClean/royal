@@ -21,6 +21,7 @@
       overflow: hidden;
     }
     h2 {
+      text-transform: uppercase;
       font-family: "Bahnschrift", sans-serif;
       src: local("Bahnschrift"), url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
       font-style: normal;
@@ -39,6 +40,7 @@
     }
     h1 {
       font-family: "Bahnschrift", sans-serif;
+      text-transform: uppercase;
       font-style: normal;
       font-weight: 500;
       font-size: 100px;
