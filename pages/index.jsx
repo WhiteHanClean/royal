@@ -14,6 +14,7 @@ import CallBack from "@/components/CallBackHun/CallBack";
 import { useEffect, useState } from "react";
 import ContactUs from "@/components/ContactUs/ContactUs";
 import { outputFileTracing } from "@/next.config";
+import PlanningMobile from "@/components/PlaningMobile/PlanningMobile";
 
 const AroundViewer = dynamic(
   () =>
@@ -41,9 +42,10 @@ export default function Home() {
       <Landscaping />
       <ContactUs />
       <Planning />
+      <PlanningMobile />
       <AroundViewer />
       <Location />
-      <CallBack/>
+      <CallBack />
     </>
   );
 }
