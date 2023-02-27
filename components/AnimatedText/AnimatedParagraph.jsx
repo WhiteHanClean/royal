@@ -43,8 +43,8 @@ const AnimatedTextCharacterParagraph = ({ text }) => {
       animate="visible"
     >
       {letters.map((letter, index) => (
-        <motion.p variants={child} key={index}>
-          {letter === " " ? "\u00A0" : letter}
+        <motion.p style={{margin:"1px !important", padding:"0 !important"}} variants={child} key={index}>
+          {letter === "" ? "\u00A0" : letter}
         </motion.p>
       ))}
     </motion.div>
