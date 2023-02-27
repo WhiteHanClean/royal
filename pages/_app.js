@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    }, 5400);
+    }, 3400);
   }, []);
 
   return (
