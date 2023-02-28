@@ -34,14 +34,8 @@ const ContactUs = () => {
             }}
             className={style.ellipse}
           >
-            <a href="https://instagram.com/royal.kg_?igshid=YmMyMTA2M2Y=">
-              <Image
-                placeholder="blur"
-                src={insta}
-                alt="insta logo"
-                width={46}
-                height={46}
-              />
+            <a href="https://www.instagram.com/direct/t/340282366841710300949128328353147599504">
+              <Image src="/insta.png" alt="insta logo" width={46} height={46} />
             </a>
           </motion.div>
           <motion.div
@@ -74,7 +68,7 @@ const ContactUs = () => {
             }}
             className={style.ellipse}
           >
-            <a href="https://api.whatsapp.com/send/?phone=996556111444&text&type=phone_number&app_absent=0">
+            <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0">
               <Image
                 src={Vector}
                 alt="whatsapp logo"
