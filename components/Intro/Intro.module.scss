@@ -5,6 +5,7 @@
   background-size: cover;
   background-color: rgba(40, 40, 40, 0.5);
   position: relative;
+  margin-top: 75px;
 
   .home_bc {
     width: 100%;
@@ -350,10 +351,8 @@
   .intro_title {
     height: 40px !important;
     h2 {
-      display: none;
-    }
-    h1 {
-      display: none;
+      font-size: 31.25px !important;
+      line-height: 40px !important;
     }
   }
 
