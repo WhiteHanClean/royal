@@ -8,15 +8,20 @@
   .content {
     display: flex;
     flex-direction: column;
-    h1 {
+    h1{
       font-family: "Bahnschrift", sans-serif !important;
       font-style: normal;
       font-weight: 500;
-      font-size: 50px;
       line-height: 73px;
       text-align: center;
       color: rgba(57, 56, 63, 0.8);
-      margin-bottom: 57px;
+    }
+    h1:nth-child(1) {
+      font-size: 31.25px;
+    }
+    h1:nth-child(2) {
+      font-size: 50px;
+      margin-bottom: 30px;
     }
     .slider {
       display: flex;
