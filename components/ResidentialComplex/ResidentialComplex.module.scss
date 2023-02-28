@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 .main{
     padding: 107px 0 111px 0;
     min-height: 100vh;
-    font-family: "Montserrat";
+    font-family: "Bahnschrift", sans-serif;
+      src: local("Bahnschrift"),
+        url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
     .main__title{
         display: flex;
         flex-direction: column;
