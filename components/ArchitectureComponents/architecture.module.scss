@@ -17,7 +17,7 @@
       color: rgba(57, 56, 63, 0.8);
     }
     h1:nth-child(1) {
-      font-size: 38.25px;
+      font-size: 31.25px;
     }
     h1:nth-child(2) {
       font-size: 85px;
@@ -137,7 +137,30 @@
       margin-bottom: 15px !important;
     }
     h1:nth-child(2){
-      font-size: 50px !important;
+      font-size: 60px !important;
+    }
+  }
+}
+
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+  .container {
+    padding: 60px 20px 30px 20px;
+    .sldie1 {
+      display: none;
+    }
+    .sldie4 {
+      display: none;
+    }
+  }
+  .content{
+    h1{
+      font-size: 31.25px !important;
+      line-height: 55px !important;
+      margin-bottom: 30px !important;
+    }
+    h1:nth-child(2){
+      font-size: 80px !important;
     }
   }
 }

@@ -58,7 +58,7 @@ const ContactUs = () => {
               <Image
                 src={facebook}
                 alt="facebook logo"
-                width={36}
+                width={30}
                 height={46}
                 placeholder="blur"
               />
