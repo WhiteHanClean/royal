@@ -1,6 +1,6 @@
 .royal_service {
   src: local("Bahnschrift"),
-  url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
+    url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
   font-family: "Bahnschrift", sans-serif;
   position: relative;
   .royalService {
@@ -41,6 +41,7 @@
     margin-top: 55px;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px 0 20px;
     @media (width <= 852px) {
       flex-direction: column;
       align-items: center;
@@ -84,15 +85,24 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px){
-  .content_item:hover {
-    transform: none;
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .royal_service {
+    .royal_service_content {
+      .content_item:hover {
+        transform: translateY(0) !important;
+      }
+    }
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .royalService {
+    background-attachment: local !important;
+  }
+}
 
-@media  screen and (min-width: 853px) {
-  .royalService{
+@media screen and (min-width: 853px) {
+  .royalService {
     height: 110vh !important;
   }
 }
