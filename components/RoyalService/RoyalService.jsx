@@ -74,7 +74,8 @@ const RoyalService = () => {
               alt="logo"
             />
 
-            <p>На рынке Кыргызстана с 2012 года</p>
+            <p>Более 3000
+              довольных клиентов</p>
           </motion.div>
           <motion.div
             className={s.content_item}
@@ -94,7 +95,8 @@ const RoyalService = () => {
               alt="logo"
             />
 
-            <p>На рынке Кыргызстана с 2012 года</p>
+            <p>Более 27
+              успешных проектов</p>
           </motion.div>
         </div>
       </div>
