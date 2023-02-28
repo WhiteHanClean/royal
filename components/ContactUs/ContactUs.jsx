@@ -17,7 +17,7 @@ const ContactUs = () => {
           whileInView="visible"
           transition={{ duration: 1 }}
           variants={{
-            visible: { opacity: 1, scale: 1 },
+            visible: { opacity: 1, scale: 1, x: 0 },
             hidden: { opacity: 0, scale: 0 },
           }}
         >
@@ -27,10 +27,10 @@ const ContactUs = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 1 }}
             variants={{
-              visible: { opacity: 1, x: 0, scale: 1 },
-              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, scale: 1, x: 0 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className={style.ellipse}
           >
@@ -47,10 +47,10 @@ const ContactUs = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 1 }}
             variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, scale: 1, x: 0 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className={style.ellipse}
           >
@@ -67,10 +67,10 @@ const ContactUs = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.5, delay: 1 }}
+            transition={{ duration: 1 }}
             variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, scale: 1, x: 0 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className={style.ellipse}
           >

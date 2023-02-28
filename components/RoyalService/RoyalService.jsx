@@ -16,10 +16,10 @@ const RoyalService = () => {
           className={s.royal_logo}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
           variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: -100 },
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
           }}
         >
           <Image
@@ -34,10 +34,10 @@ const RoyalService = () => {
           className={s.title}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 1 }}
           variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -100 },
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
           }}
         >
           <h2>СТРОИМ КАК ДЛЯ СЕБЯ</h2>
@@ -46,14 +46,12 @@ const RoyalService = () => {
           <motion.div
             className={s.content_item}
             initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.3, delay: 0.5 }}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
-              visible: { opacity: 1, x: 0, y: 0 },
-              hidden: { opacity: 0, x: -150 },
-            }}
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
           >
             <Image
               className={s.content_img0}
@@ -69,12 +67,12 @@ const RoyalService = () => {
           <motion.div
             className={s.content_item}
             initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.3, delay: 0.8 }}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -150 },
-            }}
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
           >
             <Image
               className={s.content_img1}
@@ -91,12 +89,12 @@ const RoyalService = () => {
           <motion.div
             className={s.content_item}
             initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.3, delay: 1.1 }}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -150 },
-            }}
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
           >
             <Image
               className={s.content_img2}
