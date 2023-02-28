@@ -104,6 +104,15 @@
   .selector {
     display: none;
   }
+  .plannigWrapper {
+    hr {
+      border: 2px solid #c8b552;
+      width: 100%;
+      max-width: 1234px;
+      height: auto;
+      margin-top: 50px;
+    }
+  }
 }
 
 @media screen and (min-width: 1000px) {

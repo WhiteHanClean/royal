@@ -107,6 +107,7 @@ export const Planning = () => {
                 {
                     Object.values(FLATS).map(flat => <FlatPlanning {...flat} />)
                 }
+                <hr />
             </div>
         </>
     );
