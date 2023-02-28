@@ -99,3 +99,15 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .selector {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .plannigWrapper {
+    display: none;
+  }
+}

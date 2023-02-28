@@ -62,7 +62,6 @@ export const Planning = () => {
                         hidden: { opacity: 0, x: -50 },
                     }}
                     className={styles.title}>ПЛАНИРОВКИ</motion.h1>
-
                 <div className={styles.selector}>
                     <svg width="4098" height="2332" viewBox="0 0 4098 2332" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path onClick={() => handleClickStage(!isVisibleStageModal)} className={styles.path} onMouseEnter={handleChangeCurrentStage} onMouseLeave={handleHideHint} data-stage={16 + ' этаж'} d="M1521 387H1540L1569 393.5V389H1623.5V393.5H1652.5V389L1705.5 388L1733.5 389L1763.5 395V388L1824 389V393.5L1874.5 395V390H1935V395L1970.5 388H1991.5L2045.5 389V394L2075 395V390H2129V395L2155.5 389H2176.5V395H2216V403.5L2227.5 404.5V497H2206L2205 491L2176.5 492.5V489H2155.5L2143 491L2129 494V489.5H2075V493.5H2045V489.5H1991V487.5L1968.5 488L1934 493V488L1874.5 488.5V493L1823.5 492.5V488.5H1764V492.5L1728 486.5H1706.5L1706 489.5L1653 488.5V492H1623V488.5L1569 489V492.5L1541 486.5H1520.5V492.5H1494V402H1504.5V393.5H1520.5V387H1521Z" fill="#19A281" fillOpacity="0.5" />
