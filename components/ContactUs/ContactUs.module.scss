@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 0px) and (max-width: 522px) {
   .main {
-    height: 100vh !important;
+    height: 70vh !important;
     margin-top: 40px;
     background-attachment: local;
     .container {
@@ -69,13 +69,14 @@
     }
     .title {
       font-size: 20px;
+      padding-top: 25px;
     }
     .icons {
       flex-direction: column;
       gap: 0;
       justify-content: space-between;
       align-items: center;
-      height: 63vh;
+      height: 50vh;
     }
   }
 }
