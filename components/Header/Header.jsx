@@ -31,8 +31,8 @@ const Header = () => {
           <div>
             <Image
               src={logoRoyal}
-              width={179}
-              height={57}
+              width={144}
+              height={46}
               alt="logo"
               placeholder="blur"
             />
