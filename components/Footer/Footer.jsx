@@ -2,6 +2,11 @@ import Image from "next/image";
 import React from "react";
 import s from "./Footer.module.scss";
 import { motion } from "framer-motion";
+import logoFooter from '../../public/logoFooter.png'
+import Vector from '../../public/Vector.png'
+import insta from "../../public/insta.png";
+import facebook from "../../public/facebook.png";
+import youtube from '../../public/youtube.png'
 
 const Footer = () => {
   return (
@@ -15,11 +20,13 @@ const Footer = () => {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: -50 },
           }}
-          className={s.footer_info}>
+          className={s.footer_info}
+        >
           <div className={s.footer_item}>
             <Image
+              placeholder="blur"
               className={s.footer_img}
-              src="/logoFooter.png"
+              src={logoFooter}
               width={188}
               height={171}
               alt="footer_logo"
@@ -62,7 +69,8 @@ const Footer = () => {
               <div className={s.ellipse}>
                 <a href="https://api.whatsapp.com/send/?phone=996556111444&text&type=phone_number&app_absent=0">
                   <Image
-                    src="/Vector.png"
+                    placeholder="blur"
+                    src={Vector}
                     width={18}
                     height={18}
                     alt="footer_logo"
@@ -72,7 +80,8 @@ const Footer = () => {
               <div className={s.ellipse}>
                 <a href="https://www.instagram.com/royal.kg_/">
                   <Image
-                    src="/insta.png"
+                    placeholder="blur"
+                    src={insta}
                     width={18}
                     height={18}
                     alt="footer_logo"
@@ -82,7 +91,8 @@ const Footer = () => {
               <div className={s.ellipse}>
                 <a href="https://www.facebook.com/royalconstructionkg">
                   <Image
-                    src="/facebook.png"
+                    placeholder="blur"
+                    src={facebook}
                     width={18}
                     height={18}
                     alt="footer_logo"
@@ -92,7 +102,8 @@ const Footer = () => {
               <div className={s.ellipse}>
                 <a href="https://www.youtube.com/channel/UCpTqbwsumilE7UX1LM1Lpgw?view_as=subscriber">
                   <Image
-                    src="/youtube.png"
+                    placeholder="blur"
+                    src={youtube}
                     width={22}
                     height={16}
                     alt="footer_logo"
@@ -110,7 +121,8 @@ const Footer = () => {
             visible: { opacity: 1, x: 0 },
             hidden: { opacity: 0, x: -400 },
           }}
-          className={s.unis} />
+          className={s.unis}
+        />
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -119,7 +131,8 @@ const Footer = () => {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: -50 },
           }}
-          className={s.contact_footer}>
+          className={s.contact_footer}
+        >
           2022 © ОсОО "Роял Констракшн". <br /> Юридический адрес: Кыргызская
           Республика, г. Бишкек, ул. Рыскулова, 79Б
         </motion.div>

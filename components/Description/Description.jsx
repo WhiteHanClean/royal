@@ -41,7 +41,7 @@ const Description = () => {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Image src={logo} alt="logo" />
+            <Image src={logo} alt="logo" placeholder="blur" />
           </motion.div>
         </motion.div>
         <motion.nav
@@ -54,7 +54,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image1} alt="description icon" />
+          <Image src={image1} alt="description icon" placeholder="blur" />
           <h3>Гостевой и подземный паркинг</h3>
         </motion.nav>
         <motion.nav
@@ -67,7 +67,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image2} alt="description icon" />
+          <Image src={image2} alt="description icon" placeholder="blur" />
           <h3>Алюминиевые окна теплой серии</h3>
         </motion.nav>
         <motion.nav
@@ -80,7 +80,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image3} alt="description icon" />
+          <Image src={image3} alt="description icon" placeholder="blur" />
           <h3>Просторный двор</h3>
         </motion.nav>
         <motion.nav
@@ -93,7 +93,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image4} alt="description icon" />
+          <Image src={image4} alt="description icon"  placeholder="blur"/>
           <h3>Детская площадка европейского стандарта</h3>
         </motion.nav>
         <motion.nav
@@ -106,7 +106,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image5} alt="description icon" />
+          <Image src={image5} alt="description icon" placeholder="blur"/>
           <h3>Полная газификация</h3>
         </motion.nav>
         <motion.aside
@@ -119,7 +119,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image6} alt="description icon" />
+          <Image src={image6} alt="description icon" placeholder="blur"/>
           <h3>Круговая шумоизоляция от KNAUF Insulation</h3>
         </motion.aside>
         <motion.aside
@@ -132,7 +132,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image7} alt="description icon" />
+          <Image src={image7} alt="description icon" placeholder="blur"/>
           <h3>Теплоизоляция наружных стен</h3>
         </motion.aside>
         <motion.aside
@@ -145,7 +145,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image8} alt="description icon" />
+          <Image src={image8} alt="description icon" placeholder="blur"/>
           <h3>Центральное отопление</h3>
         </motion.aside>
         <motion.aside
@@ -158,7 +158,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image9} alt="description icon" />
+          <Image src={image9} alt="description icon" placeholder="blur"/>
           <h3>Индивидуальная планировка</h3>
         </motion.aside>
         <motion.aside
@@ -171,7 +171,7 @@ const Description = () => {
           }}
           className={style.main__blocks__block}
         >
-          <Image src={image10} alt="description icon" />
+          <Image src={image10} alt="description icon" placeholder="blur"/>
           <h3>В подъезде 2 лифта европейского стандарта</h3>
         </motion.aside>
       </div>

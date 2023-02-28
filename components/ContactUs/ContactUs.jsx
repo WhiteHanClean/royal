@@ -2,6 +2,9 @@ import React from "react";
 import style from "./ContactUs.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import insta from "../../public/insta.png";
+import facebook from "../../public/facebook.png";
+import Vector from "../../public/Vector.png";
 
 const ContactUs = () => {
   return (
@@ -32,7 +35,13 @@ const ContactUs = () => {
             className={style.ellipse}
           >
             <a href="https://instagram.com/royal.kg_?igshid=YmMyMTA2M2Y=">
-              <Image src="/insta.png" alt="insta logo" width={46} height={46} />
+              <Image
+                placeholder="blur"
+                src={insta}
+                alt="insta logo"
+                width={46}
+                height={46}
+              />
             </a>
           </motion.div>
           <motion.div
@@ -47,10 +56,11 @@ const ContactUs = () => {
           >
             <a href="https://www.facebook.com/royalconstructionkg/">
               <Image
-                src="/facebook.png"
+                src={facebook}
                 alt="facebook logo"
                 width={36}
                 height={46}
+                placeholder="blur"
               />
             </a>
           </motion.div>
@@ -66,10 +76,11 @@ const ContactUs = () => {
           >
             <a href="https://api.whatsapp.com/send/?phone=996556111444&text&type=phone_number&app_absent=0">
               <Image
-                src="/Vector.png"
+                src={Vector}
                 alt="whatsapp logo"
                 width={46}
                 height={46}
+                placeholder="blur"
               />
             </a>
           </motion.div>

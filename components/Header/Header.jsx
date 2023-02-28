@@ -4,10 +4,11 @@ import AnimatedTextCharacterParagraph from "../AnimatedText/AnimatedParagraph";
 import { motion } from "framer-motion";
 import s from "./Header.module.scss";
 import Sidebar from "../Sidebar/Sidebar";
+import logoRoyal from "../../static/logoRoyal.png";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
-
+  
   return (
     <>
       <header className={s.header}>
@@ -28,7 +29,13 @@ const Header = () => {
           </div>
 
           <div>
-            <Image src="/logoRoyal.png" width={179} height={57} alt="logo" />
+            <Image
+              src={logoRoyal}
+              width={179}
+              height={57}
+              alt="logo"
+              placeholder="blur"
+            />
           </div>
 
           <div className={s.header_item}>
@@ -51,8 +58,13 @@ const Header = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, duration: 0.5 }}
           >
-            <label htmlFor="check" >
-              <input type="checkbox" id="check" className={s.check} onClick={() => setShowNav(!showNav)} />
+            <label htmlFor="check">
+              <input
+                type="checkbox"
+                id="check"
+                className={s.check}
+                onClick={() => setShowNav(!showNav)}
+              />
               <span></span>
               <span></span>
               <span></span>

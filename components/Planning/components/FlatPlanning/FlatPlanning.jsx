@@ -8,7 +8,7 @@ export const FlatPlanning = ({ roomsList = [], preview = null, flatAreaPreview =
             <h1 className={styles.title}>Блок №1, 1-комнатная квартира “А” 49,19 м²</h1>
             <div className={styles.main}>
                 <div className={styles.preview}>
-                    {preview && <Image src={preview} alt='flat' />}
+                    {preview && <Image src={preview} alt='flat'placeholder="blur" />}
                 </div>
                 <div className={styles.content}>
                     <div className={styles.roomsList}>
@@ -22,7 +22,7 @@ export const FlatPlanning = ({ roomsList = [], preview = null, flatAreaPreview =
                         }
                     </div>
                     <div className={styles.flatAreaPreview}>
-                        {flatAreaPreview && <Image src={flatAreaPreview} alt='flat preview' />}
+                        {flatAreaPreview && <Image placeholder="blur" src={flatAreaPreview} alt='flat preview' />}
                     </div>
                 </div>
             </div>
