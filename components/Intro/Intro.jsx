@@ -35,7 +35,7 @@ const Intro = () => {
           autoPlay
           muted
           loop
-          style={{ width: "100%" }}
+          style={{ width: "100%"}}
         >
           <source src="/mainS.mp4" />
         </video>
@@ -43,7 +43,7 @@ const Intro = () => {
         <div className={s.home_bc}>
           <div>
             <div className={s.intro_title}>
-              <AnimatedTextCharacter text={"Welcome to"} />
+              <AnimatedTextCharacter text={"WELCOME TO"} />
             </div>
             <div className={s.intro_last_title}>
               <AnimatedLast text={"BROOKLYN"} />

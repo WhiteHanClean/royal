@@ -2,7 +2,7 @@
   max-width: 90%;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -56,10 +56,10 @@
     transition: top 0.3s;
     opacity: 0;
   }
-
-  @media screen and (max-width: 1000px) {
-    display: none;
-  }
+  //
+  //@media screen and (max-width: 1000px) {
+  //  display: none;
+  //}
 }
 
 .stageModal {
@@ -97,5 +97,26 @@
         transition: 0.5s;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .selector {
+    display: none;
+  }
+  .plannigWrapper {
+    hr {
+      border: 2px solid #c8b552;
+      width: 100%;
+      max-width: 1234px;
+      height: auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .plannigWrapper {
+    display: none;
   }
 }

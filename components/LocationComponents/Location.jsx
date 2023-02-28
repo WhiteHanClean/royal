@@ -16,7 +16,7 @@ const Location = () => {
                             visible: { opacity: 1, y: 0 },
                             hidden: { opacity: 0, y: -50 },
                         }}
-                    >Расположение</motion.h1>
+                    >РАСПОЛОЖЕНИЕ</motion.h1>
                     <div className={s.map}>
                         <iframe
                             className={s.iframe}

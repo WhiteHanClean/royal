@@ -16,7 +16,7 @@ const ResidentialComplex = () => {
               hidden: { opacity: 0, x: -100 },
             }}
           >
-            Жилой комплекс
+            ЖИЛОЙ КОМПЛЕКС
           </motion.h2>
           <motion.h2
             initial="hidden"
@@ -31,22 +31,24 @@ const ResidentialComplex = () => {
           </motion.h2>
         </div>
         <ResidentialSlider />
+        <div className={style.hr}>
           <motion.hr
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1 }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100},
+              hidden: { opacity: 0, x: -150},
             }}
           />
+          </div>
         <motion.h6
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
           variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: -100 },
+            visible: { opacity: 1, x: 0, y: 0 },
+            hidden: { opacity: 0, x: -100 },
           }}
         >
           ·Территория 1 га ·Этажность 16 ·Высота потолков от 3.1 до 3.45 <br />
