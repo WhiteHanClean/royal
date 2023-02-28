@@ -16,7 +16,7 @@ const RoyalService = () => {
           className={s.royal_logo}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           variants={{
             visible: { opacity: 1, scale: 1, x: 0 },
             hidden: { opacity: 0, scale: 0 },
@@ -34,7 +34,7 @@ const RoyalService = () => {
           className={s.title}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           variants={{
             visible: { opacity: 1, scale: 1, x: 0 },
             hidden: { opacity: 0, scale: 0 },
@@ -47,7 +47,7 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           variants={{
             visible: { opacity: 1, scale: 1, x: 0 },
             hidden: { opacity: 0, scale: 0 },
@@ -68,7 +68,7 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           variants={{
             visible: { opacity: 1, scale: 1, x: 0 },
             hidden: { opacity: 0, scale: 0 },
@@ -90,7 +90,7 @@ const RoyalService = () => {
             className={s.content_item}
             initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           variants={{
             visible: { opacity: 1, scale: 1, x: 0 },
             hidden: { opacity: 0, scale: 0 },
