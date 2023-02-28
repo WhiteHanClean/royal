@@ -8,26 +8,26 @@ const Landscaping = () => {
       <div className="container">
         <div className={style.title}>
           <motion.h2
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.5}}
-          variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -100 },
-          }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100 },
+            }}
           >БЛАГОУСТРОЙСТВО</motion.h2>
         </div>
         <main>
           <LandscapingSlider />
           <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 1 }}
-          variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -50 },
-          }}
-           className={style.main__yard}>
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -50 },
+            }}
+            className={style.main__yard}>
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -45,7 +45,7 @@ const Landscaping = () => {
                 visible: { opacity: 1, x: 0 },
                 hidden: { opacity: 0, x: -50 },
               }}
-             className={style.main__yard__text}>
+              className={style.main__yard__text}>
               <p>·60% территории будет отведено под благоустройство</p>
               <p>
                 Многофункциональная детская площадка в стиле бруклинского моста

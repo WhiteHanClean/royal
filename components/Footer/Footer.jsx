@@ -41,13 +41,13 @@ const Footer = () => {
                 <a href="#">Главная</a>
               </li>
               <li>
-                <a href="#">О нас</a>
+                <a href="#service">О нас</a>
               </li>
               <li>
-                <a href="#">Преимущества</a>
+                <a href="#architecture">Преимущества</a>
               </li>
               <li>
-                <a href="#">Планировки</a>
+                <a href="#planning">Планировки</a>
               </li>
             </ul>
           </div>

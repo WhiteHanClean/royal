@@ -38,10 +38,10 @@ const ResidentialComplex = () => {
             transition={{ duration: 1 }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -150},
+              hidden: { opacity: 0, x: -150 },
             }}
           />
-          </div>
+        </div>
         <motion.h6
           initial="hidden"
           whileInView="visible"
