@@ -35,7 +35,7 @@ const Intro = () => {
           autoPlay
           muted
           loop
-          style={{ width: "100%"}}
+          style={{ width: "100%" }}
         >
           <source src="/mainS.mp4" />
         </video>
@@ -62,7 +62,7 @@ const Intro = () => {
           </div>
         </div>
         <div className={s.button_focus_fixed}>
-          <button className={s.button_focus}><a href="https://wa.me/996700916255?text=Здравствуйте%20я%20с%20вашего%20сайта">Связаться с нами</a></button>
+          <button className={s.button_focus}><a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0">Связаться с нами</a></button>
         </div>
       </section>
     </>
