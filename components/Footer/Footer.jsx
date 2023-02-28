@@ -67,7 +67,7 @@ const Footer = () => {
             </ul>
             <div className={s.ellipse_blocks}>
               <div className={s.ellipse}>
-                <a href="https://api.whatsapp.com/send/?phone=996556111444&text&type=phone_number&app_absent=0">
+              <a href="https://wa.me/996556111444?text=Здравствуйте%20я%20с%20вашего%20сайта">
                   <Image
                     placeholder="blur"
                     src={Vector}
