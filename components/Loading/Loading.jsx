@@ -6,7 +6,7 @@ const Loading = () => {
   return (
     <div className={s.waviy}>
       <div className={s.waviy_center}>
-        <Image className={s.loading_img} src="/logoRoyal.png" width={360} height={120} alt="logo" />
+        <Image className={s.loading_img} src="/logoRoyal.png" width={360} height={120} alt="logo"/>
         <div style={{ marginTop: '40px' }}>
           <span style={{ "--i": 1 }}>B</span>
           <span style={{ "--i": 2 }}>R</span>

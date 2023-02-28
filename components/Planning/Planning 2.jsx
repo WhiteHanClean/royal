@@ -21,7 +21,6 @@ export const Planning = () => {
     const handleClickStage = (flag) => {
         setIsVisibleStageModal(flag)
     }
-
     const handleChangeCurrentStage = (e) => {
         let hintText = FLATS[e.target.dataset.flatId]?.title;
 
@@ -70,7 +69,7 @@ export const Planning = () => {
                     <path onClick={() => handleClickStage(!isVisibleStageModal)} className={styles.path} onMouseEnter={handleChangeCurrentStage} onMouseLeave={handleHideHint} data-stage={4 + ' этаж'} d="M1521 1564H1540L1569 1570.5V1566H1623.5V1570.5H1652.5V1566L1705.5 1565L1733.5 1566L1763.5 1572V1565L1824 1566V1570.5L1874.5 1572V1567H1935V1572L1970.5 1565H1991.5L2045.5 1566V1571L2075 1572V1567H2129V1572L2155.5 1566H2176.5V1572H2216V1580.5L2227.5 1581.5V1674H2206L2205 1668L2176.5 1669.5V1666H2155.5L2143 1668L2129 1671V1666.5H2075V1670.5H2045V1666.5H1991V1664.5L1968.5 1665L1934 1670V1665L1874.5 1665.5V1670L1823.5 1669.5V1665.5H1764V1669.5L1728 1663.5H1706.5L1706 1666.5L1653 1665.5V1669H1623V1665.5L1569 1666V1669.5L1541 1663.5H1520.5V1669.5H1494V1579H1504.5V1570.5H1520.5V1564H1521Z" fill="#19A281" fillOpacity="0.5" />
                     <path onClick={() => handleClickStage(!isVisibleStageModal)} className={styles.path} onMouseEnter={handleChangeCurrentStage} onMouseLeave={handleHideHint} data-stage={3 + ' этаж'} d="M1521 1663H1540L1569 1669.5V1665H1623.5V1669.5H1652.5V1665L1705.5 1664L1733.5 1665L1763.5 1669.5V1664L1824 1665V1669.5H1874.5V1665H1934L1935 1669.5L1970.5 1664H1991.5L2045.5 1665V1670L2075 1670.5V1666H2129V1671L2155.5 1665H2176.5V1670H2216L2218.5 1675L2217.5 1682.5L2216 1694.5V1712H2177.5L2177 1782H2175H2155L2142.5 1781.5L2129 1782H2126.5H2084H2075H2045.5H2040.5L1980.5 1781V1760.5L1971 1760L1940 1760.5H1934H1874.5H1871.5H1834H1824H1765.5H1763.5H1728H1720.5H1716V1782H1655H1623H1619.5H1569H1556L1541 1781L1519.5 1782L1518.5 1712H1494V1678V1669.5H1504.5H1520.5V1663H1521Z" fill="#19A281" fillOpacity="0.5" />
                 </svg>
-                <Image src={Brooklyn} alt="Brooklyn" />
+                <Image src={Brooklyn} alt="Brooklyn" placeholder="blur"/>
             </div>
             <div className={styles.hint} style={{ opacity: hint.isVisible ? 1 : 0, top: hint.y - 70, left: hint.x + 30, transition: '0.3s' }}>
                 {currentHintText}
@@ -86,7 +85,7 @@ export const Planning = () => {
                             <path onClick={(e) => handleChooseFlat(!isVisible, e)} className={styles.path} onMouseEnter={handleChangeCurrentStage} onMouseLeave={handleHideHint} data-flat-id={78} d="M2100 467.5H1131L1149.5 1625.5L2395.5 1632V1950H2957.5V216.5H2100V467.5Z" fillOpacity="0.5" />
                         </svg>
 
-                        <Image className={styles.selectorFlat} src={StagePlan} alt="stage plan" />
+                        <Image className={styles.selectorFlat} src={StagePlan} alt="stage plan"placeholder="blur" />
                     </div>
                 </div>
                 <Modal open={isVisible} width={'100%'} footer={null} onCancel={() => setIsVisible(false)}>

@@ -3,7 +3,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import s from "./RoyalService.module.scss";
 import { useEffect, useState } from "react";
-
+import logoSecond from '../../public/logoSecond.png'
+import secondStrana from '../../public/secondStrana.png'
+import Group from '../../public/Group.png'
+import zdanie from '../../public/zdanie.png'
 const RoyalService = () => {
   return (
     <div className={s.royal_service} id="service">
@@ -13,22 +16,28 @@ const RoyalService = () => {
           className={s.royal_logo}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: -100 },
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
           }}
         >
-          <Image src="/logoSecond.png" width={282} height={257} alt="logo" />
+          <Image
+            src={logoSecond}
+            width={282}
+            height={257}
+            alt="logo"
+            placeholder="blur"
+          />
         </motion.div>
         <motion.div
           className={s.title}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.5 }}
           variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -100 },
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
           }}
         >
           <h2>СТРОИМ КАК ДЛЯ СЕБЯ</h2>
@@ -37,21 +46,20 @@ const RoyalService = () => {
           <motion.div
             className={s.content_item}
             initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.3, delay: 0.5 }}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
-              visible: { opacity: 1, x: 0, y: 0 },
-              hidden: { opacity: 0, x: -150 },
-            }}
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
           >
             <Image
               className={s.content_img0}
-              src="/secondStrana.png"
+              src={secondStrana}
               width={123}
               height={57}
               alt="logo"
+              placeholder="blur"
             />
 
             <p>На рынке Кыргызстана с 2012 года</p>
@@ -59,19 +67,20 @@ const RoyalService = () => {
           <motion.div
             className={s.content_item}
             initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.3, delay: 0.8 }}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -150 },
-            }}
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
           >
             <Image
               className={s.content_img1}
-              src="/Group.png"
+              src={Group}
               width={79}
               height={79}
               alt="logo"
+              placeholder="blur"
             />
 
             <p>Более 3000
@@ -80,19 +89,20 @@ const RoyalService = () => {
           <motion.div
             className={s.content_item}
             initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 0.3, delay: 1.1 }}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -150 },
-            }}
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
           >
             <Image
               className={s.content_img2}
-              src="/zdanie.png"
+              src={zdanie}
               width={73}
               height={73}
               alt="logo"
+              placeholder="blur"
             />
 
             <p>Более 27

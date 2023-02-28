@@ -2,6 +2,9 @@ import React from "react";
 import style from "./ContactUs.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import insta from "../../public/insta.png";
+import facebook from "../../public/facebook.png";
+import Vector from "../../public/Vector.png";
 
 const ContactUs = () => {
   return (
@@ -12,9 +15,9 @@ const ContactUs = () => {
           className={style.title}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           variants={{
-            visible: { opacity: 1, scale: 1 },
+            visible: { opacity: 1, scale: 1, x: 0 },
             hidden: { opacity: 0, scale: 0 },
           }}
         >
@@ -24,10 +27,10 @@ const ContactUs = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5 }}
             variants={{
-              visible: { opacity: 1, x: 0, scale: 1 },
-              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, scale: 1, x: 0 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className={style.ellipse}
           >
@@ -38,38 +41,40 @@ const ContactUs = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.5 }}
             variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, scale: 1, x: 0 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className={style.ellipse}
           >
             <a href="https://www.facebook.com/royalconstructionkg/">
               <Image
-                src="/facebook.png"
+                src={facebook}
                 alt="facebook logo"
                 width={35}
                 height={46}
+                placeholder="blur"
               />
             </a>
           </motion.div>
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.5, delay: 1 }}
+            transition={{ duration: 0.5 }}
             variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, scale: 1, x: 0 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className={style.ellipse}
           >
             <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0">
               <Image
-                src="/Vector.png"
+                src={Vector}
                 alt="whatsapp logo"
                 width={46}
                 height={46}
+                placeholder="blur"
               />
             </a>
           </motion.div>

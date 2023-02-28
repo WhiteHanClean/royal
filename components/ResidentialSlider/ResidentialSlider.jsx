@@ -41,16 +41,16 @@ export default function ResidentialSlider() {
         className="residential__slider"
       >
         <SwiperSlide>
-          <Image src={slide} alt='slide'/>
+          <Image src={slide} alt='slide'placeholder="blur"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={slideTwo} alt='slide'/>
+          <Image src={slideTwo} alt='slide'placeholder="blur"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={slideThree} alt='slide'/>
+          <Image src={slideThree} alt='slide'placeholder="blur"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={slideFour} alt='slide'/>
+          <Image src={slideFour} alt='slide'placeholder="blur"/>
         </SwiperSlide>
       </Swiper>
   );
