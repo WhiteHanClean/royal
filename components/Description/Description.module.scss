@@ -228,7 +228,7 @@
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .main {
-    height: 230vh;
+    height: 130vh;
     justify-content: start !important;
     align-items: start !important;
     overflow: hidden !important;
@@ -237,15 +237,17 @@
     background-size: cover;
     background-position: -250px;
     margin-top: 35px;
+    background-attachment: local;
     .main__background {
-      height: 230vh;
+      height: 130vh;
       width: 100%;
+      background-attachment: local;
       img {
         display: none;
       }
     }
     .main__background_opacity {
-      height: 230vh !important;
+      height: 130vh !important;
     }
     .main__blocks {
       margin-top: 0;
@@ -359,7 +361,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 770px) {
   .main {
-    height: 170vh;
+    height: 130vh;
     justify-content: start !important;
     align-items: start !important;
     overflow: hidden !important;
@@ -367,15 +369,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -250px;
+    background-attachment: local;
     .main__background {
-      height: 170vh;
+      height: 130vh;
       width: 100%;
+      background-attachment: local;
       img {
         display: none;
       }
     }
     .main__background_opacity {
-      height: 170vh !important;
+      height: 130vh !important;
     }
     .main__blocks {
       margin-top: 0;
