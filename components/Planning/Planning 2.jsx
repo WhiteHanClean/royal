@@ -21,7 +21,6 @@ export const Planning = () => {
     const handleClickStage = (flag) => {
         setIsVisibleStageModal(flag)
     }
-
     const handleChangeCurrentStage = (e) => {
         let hintText = FLATS[e.target.dataset.flatId]?.title;
 
