@@ -15,7 +15,7 @@ const Location = () => {
                         variants={{
                             visible: { opacity: 1, y: 0 },
                             hidden: { opacity: 0, y: -50 },
-                        }}
+                        }} I
                     >РАСПОЛОЖЕНИЕ</motion.h1>
                     <div className={s.map}>
                         <iframe
