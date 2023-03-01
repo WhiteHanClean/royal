@@ -32,7 +32,7 @@ const Header = () => {
             <Image
               src={logoRoyal}
               width={144}
-              height={46}
+              height={43}
               alt="logo"
               placeholder="blur"
             />

@@ -94,7 +94,7 @@ const Footer = () => {
                     placeholder="blur"
                     src={facebook}
                     width={18}
-                    height={18}
+                    height={24}
                     alt="footer_logo"
                   />
                 </a>
