@@ -92,13 +92,18 @@ const Architecture = () => {
                     alt="logo"
                   />
                 </div>
-                <Image
-                  onClick={() => setOpen(true)}
-                  className={s.sldie4}
-                  src={sldie4}
-                  alt="logo"
-                  placeholder="blur"
-                />
+                <div class={s.container_img} onClick={() => setOpen(true)}>
+                  <Image
+                    onClick={() => setOpen(true)}
+                    className={s.sldie4}
+                    src={sldie4}
+                    alt="logo"
+                    placeholder="blur"
+                  />
+                  <div class={s.overlay}>
+                    <p>посмотреть галерею</p>
+                  </div>
+                </div>
               </div>{" "}
               <div
                 style={{
