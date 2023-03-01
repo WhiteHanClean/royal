@@ -5,7 +5,7 @@ import Image from "next/image";
 import sldie1 from "../../public/lol.jpg";
 import sldie2 from "../../public//lol1.png";
 import sldie3 from "../../public/lol2.png";
-import sldie4 from "../../public/okkk.png";
+import sldie4 from "../../public/okkk.jpg";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
