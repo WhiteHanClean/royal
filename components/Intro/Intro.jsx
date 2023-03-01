@@ -63,7 +63,7 @@ const Intro = () => {
         </div>
         <div className={s.button_focus_fixed}>
           <button className={s.button_focus}>
-            <a href="https://wa.me/номерТелефона?text=Здравствуйте,%20можно%20подробнее%20о%20жк%20Brooklyn">
+            <a href="https://wa.me/+996776111444?text=Здравствуйте,%20можно%20подробнее%20о%20жк%20Brooklyn">
               Связаться с нами
             </a>
           </button>
