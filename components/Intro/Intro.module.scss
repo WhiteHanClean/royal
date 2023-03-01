@@ -301,27 +301,9 @@
 // }
 
 
-@media screen and (min-width: 360px) and (max-width: 390px) {
+@media screen and (min-width: 360px) and (max-width: 460px) {
   .button_focus_fixed {
-    display: flex;
-    justify-content: center;
-    left: 9%;
-  }
-}
-
-@media screen and (min-width: 391px) and (max-width: 423px) {
-  .button_focus_fixed {
-    display: flex;
-    justify-content: center;
-    left: 10%;
-  }
-}
-
-@media screen and (min-width: 424px) and (max-width: 460px) {
-  .button_focus_fixed {
-    display: flex;
-    justify-content: center;
-    left: 12%;
+    right: 10px !important;
   }
 }
 

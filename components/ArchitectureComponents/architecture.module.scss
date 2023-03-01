@@ -41,7 +41,6 @@
           border-radius: 20px;
           .sldie4 {
             display: block;
-            max-width: 100%;
             cursor: pointer;
           }
 
@@ -171,9 +170,10 @@
     .sldie1 {
       display: none;
     }
-    .sldie4 {
-      display: none;
-    }
+  }
+  .sldie4{
+    object-fit: contain !important;
+    object-position: -200px 0;
   }
   .content {
     h1 {
@@ -193,9 +193,10 @@
     .sldie1 {
       display: none;
     }
-    .sldie4 {
-      display: none;
-    }
+  }
+  .sldie4{
+    object-fit: contain !important;
+    object-position: -200px 0;
   }
   .content {
     h1 {
@@ -218,5 +219,9 @@
       width: 100% !important;
       object-fit: contain !important;
     }
+  }
+  .sldie4{
+    object-fit: contain !important;
+    object-position: -200px 0;
   }
 }
