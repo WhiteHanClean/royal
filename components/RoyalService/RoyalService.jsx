@@ -40,7 +40,7 @@ const RoyalService = () => {
             hidden: { opacity: 0, scale: 0 },
           }}
         >
-          <h2>СТРОИМ КАК ДЛЯ СЕБЯ</h2>
+          <h2>ВЫБИРАЙТЕ ЛУЧШЕЕ ДЛЯ СЕБЯ!</h2>
         </motion.div>
         <div className={s.royal_service_content}>
           <motion.div
