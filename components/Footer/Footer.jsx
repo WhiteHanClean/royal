@@ -78,7 +78,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className={s.ellipse}>
-                <a href="https://www.instagram.com/direct/t/340282366841710300949128328353147599504">
+                <a href="https://ig.me/m/royal.kg_">
                   <Image
                     placeholder="blur"
                     src={insta}
