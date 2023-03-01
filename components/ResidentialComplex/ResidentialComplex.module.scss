@@ -4,6 +4,12 @@
   font-family: "Bahnschrift", sans-serif;
   src: local("Bahnschrift"),
     url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
+    br:nth-child(1){
+      display: none;
+    }
+    br:nth-child(2){
+      display: none;
+    }
   .main__title {
     display: flex;
     flex-direction: column;
@@ -50,6 +56,12 @@
 @media screen and (min-width: 0px) and (max-width: 485px) {
   .main {
     padding: 107px 0 111px 0;
+    br:nth-child(1){
+      display: block;
+    }
+    br:nth-child(2){
+      display: block;
+    }
     .main__title {
       h2 {
         font-size: 23.25px;
@@ -76,6 +88,12 @@
 @media screen and (min-width: 486px) and (max-width: 728px) {
     .main{
         padding: 100px 0 100px 0;
+        br:nth-child(1){
+          display: block;
+        }
+        br:nth-child(2){
+          display: block;
+        }
         .main__title{
             h2{
                 font-size: 33px;
