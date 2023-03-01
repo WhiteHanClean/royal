@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import sldie1 from "../../public/slide123.png";
-import sldie2 from "../../public//slideR2.png";
-import sldie3 from "../../public/sldieR3.png";
-import sldie4 from "../../public/slideR4.png";
+import sldie1 from "../../public/lol.jpg";
+import sldie2 from "../../public//lol1.png";
+import sldie3 from "../../public/lol2.png";
+import sldie4 from "../../public/okkk.png";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
