@@ -228,7 +228,7 @@
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .main {
-    height: 130vh;
+    height: 160vh;
     justify-content: start !important;
     align-items: start !important;
     overflow: hidden !important;
@@ -239,7 +239,7 @@
     margin-top: 35px;
     background-attachment: local;
     .main__background {
-      height: 130vh;
+      height: 160vh;
       width: 100%;
       background-attachment: local;
       img {
@@ -247,7 +247,7 @@
       }
     }
     .main__background_opacity {
-      height: 130vh !important;
+      height: 160vh !important;
     }
     .main__blocks {
       margin-top: 0;
@@ -361,7 +361,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 770px) {
   .main {
-    height: 130vh;
+    height: 170vh;
     justify-content: start !important;
     align-items: start !important;
     overflow: hidden !important;
@@ -371,7 +371,7 @@
     background-position: -250px;
     background-attachment: local;
     .main__background {
-      height: 130vh;
+      height: 170vh;
       width: 100%;
       background-attachment: local;
       img {
@@ -379,7 +379,7 @@
       }
     }
     .main__background_opacity {
-      height: 130vh !important;
+      height: 170vh !important;
     }
     .main__blocks {
       margin-top: 0;

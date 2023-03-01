@@ -45,7 +45,15 @@ const Architecture = () => {
           >
             АРХИТЕКТУРА ЖИЛОГО КОМПЛЕКСА
           </motion.h1>
-          <motion.h1>
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -100 },
+            }}
+          >
             BROOKLYN
           </motion.h1>
           <div className={s.slider}></div>
@@ -90,15 +98,20 @@ const Architecture = () => {
                   src={sldie4}
                   alt="logo"
                   placeholder="blur"
-
                 />
               </div>{" "}
-             <div style={{textAlign:"center", fontWeight:"bold", paddingTop: "40px"}}>
-             <b>
-             <a>Внешний облик жилого комплекса BROOKLYN</a> - исполнен в
-              американском стиле
-             </b>
-             </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  paddingTop: "40px",
+                }}
+              >
+                <b>
+                  <a>Внешний облик жилого комплекса BROOKLYN</a> - исполнен в
+                  американском стиле
+                </b>
+              </div>
             </motion.span>
             <br />
             <motion.div
