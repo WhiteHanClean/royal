@@ -28,11 +28,11 @@ const Header = () => {
             </ul>
           </div>
 
-          <div>
+          <div style={{padding: '8px'}}>
             <Image
               src={logoRoyal}
               width={144}
-              height={43}
+              height={45}
               alt="logo"
               placeholder="blur"
             />
