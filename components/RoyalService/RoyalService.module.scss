@@ -3,6 +3,11 @@
     url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
   font-family: "Bahnschrift", sans-serif;
   position: relative;
+  .royal_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .royalService {
     overflow: hidden;
     background: url("../../public/second.png") no-repeat;
@@ -30,7 +35,7 @@
   .title {
     text-align: center;
     color: #f4f3e3;
-    font-size: 30px;
+    font-size: 25px;
     padding: 60px 40px 30px 40px;
   }
   .royal_service_content {
@@ -87,6 +92,9 @@
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .royal_service {
+    .title{
+      font-size: 19px;
+    }
     .royal_service_content {
       .content_item:hover {
         transform: translateY(0) !important;

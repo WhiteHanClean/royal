@@ -46,7 +46,7 @@
   .main {
     padding: 100px 0 50px 0;
     .title {
-      font-size: 23px;
+      font-size: 16px;
     }
     main {
       flex-direction: column;
@@ -66,11 +66,11 @@
   }
 }
 
-@media screen and (min-width: 426px) and (max-width: 700px) {
+@media screen and (min-width: 426px) and (max-width: 880px) {
   .main {
     padding: 100px 0 50px 0;
     .title {
-      font-size: 28px;
+      font-size: 18px;
     }
     main {
       padding-top: 30px;

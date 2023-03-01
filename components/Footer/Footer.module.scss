@@ -1,7 +1,6 @@
 .footer {
   width: 100%;
   background: rgba(57, 56, 63, 0.8);
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -9,6 +8,9 @@
   padding-top: 35px;
   padding-bottom: 30px;
   margin-top: 60px;
+  font-family: "Bahnschrift", sans-serif;
+  src: local("Bahnschrift"),
+    url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
   hr {
     border: 1.5px solid #c8b552;
   }
@@ -16,12 +18,13 @@
     display: flex;
     justify-content: space-between;
     .footer_item {
+      font-family: "Bahnschrift", sans-serif !important;
       .footer_img {
         margin-left: 25px;
       }
       p {
         margin-left: 25px;
-        font-family: "";
+        font-family: "Bahnschrift", sans-serif !important;
         font-style: normal;
         font-weight: 500;
         font-size: 15px;

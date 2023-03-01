@@ -124,7 +124,7 @@ const Architecture = () => {
               }}
               className={s.under_tag}
             >
-              <div style={{ textAlign: "center" }}>
+              <div className={s.fasad} style={{ textAlign: "center" }}>
                 <br />
                 <a>Фасад:</a> “Вентилируемый фасад” <br />
                 Корзины для кондиционерных блоков <br />
