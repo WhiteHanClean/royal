@@ -24,8 +24,8 @@ const RoyalService = () => {
         >
           <Image
             src={logoSecond}
-            width={220}
-            height={201}
+            width={190}
+            height={170}
             alt="logo"
             placeholder="blur"
           />
