@@ -39,9 +39,22 @@
       }
 
       .path:hover {
-        opacity: 1;
+        opacity: 2;
         pointer-events: all;
         transition: 0.5s;
+      }
+
+      .activePath {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: activeAnimation;
+        animation-timing-function: linear;
+      }
+
+      @keyframes activeAnimation {
+        0% { opacity: 0 }
+        50% { opacity: 1  }
+        100% { opacity: 0  }
       }
     }
   }
