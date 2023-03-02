@@ -81,14 +81,14 @@
   }
 }
 
-@media screen and (min-width: 523px) and (max-width: 840px) {
+@media screen and (min-width: 523px) and (max-width: 1000px) {
   .main {
     height: 55vh !important;
     .container {
       padding: 0 20px 0 20px;
     }
     .title {
-      font-size: 25px;
+      font-size: 18px;
     }
   }
 }

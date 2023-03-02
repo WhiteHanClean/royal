@@ -6,7 +6,7 @@ import insta from "../../public/insta.png";
 import facebook from "../../public/facebook.png";
 import Vector from "../../public/Vector.png";
 
-const ContactUs = () => {
+const ContactUs = ({text, text2}) => {
   return (
     <div className={style.main}>
       <div className={style.background_opacity}></div>
@@ -21,7 +21,7 @@ const ContactUs = () => {
             hidden: { opacity: 0, scale: 0 },
           }}
         >
-          <h2>ЗАДАЙТЕ ИНТЕРЕСУЮЩИЙ ВАС ВОПРОС</h2>
+          <h2>{text} <br /> {text2}</h2>
         </motion.div>
         <div className={style.icons}>
           <motion.div

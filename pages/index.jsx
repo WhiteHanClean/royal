@@ -36,11 +36,11 @@ export default function Home() {
       <Intro />
       <RoyalService />
       <Architecture />
-      <ContactUs />
+      <ContactUs text="ПОЛУЧИТЕ БОЛЕЕ ОБШИРНУЮ ИНФОРМАЦИЮ!"/>
       <ResidentialComplex />
       <Description />
       <Landscaping />
-      <ContactUs />
+      <ContactUs text="ОСТАЛИСЬ ВОПРОСЫ?" text2="С УДОВОЛЬСТВИЕМ НА НИХ ОТВЕТИМ!" />
       <Planning />
       <PlanningMobile />
       <AroundViewer />
