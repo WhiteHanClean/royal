@@ -26,7 +26,11 @@ export const FlatPlanning = ({
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.title}>
-        Блок №1, 1-комнатная квартира “А” 49,19 м²
+        {
+          roomsList.map(item => {
+            return <span>{item.info}</span>
+          })
+        }
       </h1>
       <div className={styles.main}>
         <div className={styles.preview}>

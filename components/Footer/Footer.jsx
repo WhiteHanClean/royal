@@ -31,7 +31,7 @@ const Footer = () => {
               height={171}
               alt="footer_logo"
             />
-            <p>Фактический адрес: г. Бишкек, ул. Коенкозова, 75</p>
+            <p>Главный офис: г. Бишкек, ул. Коенкозова, 75</p>
           </div>
           <div className={s.footer_item}>
             <h4 className={s.title_footer}>Информация :</h4>
