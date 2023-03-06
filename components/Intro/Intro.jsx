@@ -37,7 +37,7 @@ const Intro = () => {
           loop
           style={{ width: "100%" }}
         >
-          <source src="/mainS.mp4" />
+          <source src="/introV.mp4" />
         </video>
 
         <div className={s.home_bc}>
