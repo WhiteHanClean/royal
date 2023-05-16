@@ -29,7 +29,7 @@ const Architecture = () => {
     React.useState(100);
   const [scrollToZoom, setScrollToZoom] = React.useState(false);
 
-  console.log(slide);
+  // console.log(slide);
   return (
     <>
       <div className={s.container}>

@@ -1,11 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, {useEffect} from "react";
 import s from "./Loading.module.scss";
 import logoRoyal from '../../static/logoRoyal.png'
 
-const Loading = () => {
+const Loading = ({loading}) => {
+
   return (
-    <div className={s.waviy}>
+    <div className={s.waviy} style={{display: loading? 'flex': "none"}}>
       <div className={s.waviy_center}>
         <Image className={s.loading_img} src={logoRoyal} width={360} height={120} alt="logo"/>
         <div style={{ marginTop: '40px' }}>
