@@ -23,7 +23,8 @@ const Footer = () => {
           className={s.footer_info}
         >
           <div className={s.footer_item}>
-            <Image
+            <a href="https://royal.kg/" target="_blank">
+                <Image
               placeholder="blur"
               className={s.footer_img}
               src={logoFooter}
@@ -31,6 +32,8 @@ const Footer = () => {
               height={171}
               alt="footer_logo"
             />
+            </a>
+          
             <p>Главный офис: г. Бишкек, ул. Коенкозова, 75</p>
           </div>
           <div className={s.footer_item}>
@@ -56,18 +59,18 @@ const Footer = () => {
             <hr />
             <ul>
               <li>
-                <a href="+996 776 111 444">+996 776 111 444</a>
+                <a href="tel: +996-776-111-444">+996 776 111 444</a>
               </li>
               <li>
-                <a href="+996 556 111 444">+996 556 111 444</a>
+                <a href="tel: +996-556-111-444">+996 556 111 444</a>
               </li>
               <li>
-                <a href="+996 706 111 444">+996 706 111 444</a>
+                <a href="tel: +996-706-111-444">+996 706 111 444</a>
               </li>
             </ul>
             <div className={s.ellipse_blocks}>
               <div className={s.ellipse}>
-                <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0">
+                <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0" target="_blank" >
                   <Image
                     placeholder="blur"
                     src={Vector}
@@ -78,7 +81,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className={s.ellipse}>
-                <a href="https://ig.me/m/royal.kg_">
+                <a href="https://ig.me/m/royal.kg_" target="_blank">
                   <Image
                     placeholder="blur"
                     src={insta}
@@ -89,7 +92,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className={s.ellipse}>
-                <a href="https://www.facebook.com/royalconstructionkg">
+                <a href="https://www.facebook.com/royalconstructionkg" target="_blank">
                   <Image
                     placeholder="blur"
                     src={facebook}
@@ -100,7 +103,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className={s.ellipse}>
-                <a href="https://www.youtube.com/channel/UCpTqbwsumilE7UX1LM1Lpgw?view_as=subscriber">
+                <a href="https://www.youtube.com/channel/UCpTqbwsumilE7UX1LM1Lpgw?view_as=subscriber" target="_blank">
                   <Image
                     placeholder="blur"
                     src={youtube}
