@@ -87,7 +87,7 @@ export const Planning = () => {
                 <div className={styles.hint} style={{ opacity: hint.isVisible ? 1 : 0, top: hint.y - 70, left: hint.x + 30, transition: '0.3s' }}>
                     {currentHintText}
                 </div>
-                <Modal open={isVisibleStageModal} footer={null} width={'100%'}  className={styles.stageModal}>
+                <Modal open={isVisibleStageModal}  footer={null} width={'100%'}  className={styles.stageModal}>
                     <div className={styles.stageModal}>
                         <div className={styles.selector}>
                             <svg width="7947" height="5762" viewBox="0 0 7947 5762" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,10 +100,11 @@ export const Planning = () => {
                             <Image className={styles.selectorFlat} src={StagePlan} alt="stage plan" />
                         </div>
                     </div>
-                    <Modal open={isVisible} width={'100%'} footer={null} onCancel={() => setIsVisible(false)}>
+                    <Modal className='PlanningModal' open={isVisible} closable={false} width={'100%'} footer={null}>
                         <FlatPlanning {...choosenFlat} />
+                    <FloatButton style={{width: '50px' , height: '50px' , top: '100px' , right: '35px'}} size="large" icon={<CloseOutlined/>}  onClick={() => setIsVisible(false)}/>
                     </Modal>
-                    <FloatButton size="large" icon={<CloseOutlined/>}  onClick={() => setIsVisibleStageModal(false)}/>
+                    <FloatButton style={{width: '70px' , height: '70px' , top: '100px' , right: '70px' , zIndex: '1000' }} size="large" icon={<CloseOutlined/>}  onClick={() => setIsVisibleStageModal(false)}/>
                 </Modal>
             </div>
             <div className={styles.plannigWrapper}>
