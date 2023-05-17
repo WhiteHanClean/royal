@@ -34,7 +34,7 @@ const ContactUs = ({text, text2}) => {
             }}
             className={style.ellipse}
           >
-            <a href="https://www.instagram.com/direct/t/340282366841710300949128328353147599504">
+            <a href="https://www.instagram.com/direct/t/340282366841710300949128328353147599504" target="_blank">
               <Image src="/insta.png" alt="insta logo" width={46} height={46} />
             </a>
           </motion.div>
@@ -48,7 +48,7 @@ const ContactUs = ({text, text2}) => {
             }}
             className={style.ellipse}
           >
-            <a href="https://www.facebook.com/royalconstructionkg/">
+            <a href="https://www.facebook.com/royalconstructionkg/" target="_blank">
               <Image
                 src={facebook}
                 alt="facebook logo"
@@ -68,7 +68,7 @@ const ContactUs = ({text, text2}) => {
             }}
             className={style.ellipse}
           >
-            <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0">
+            <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0" target="_blank">
               <Image
                 src={Vector}
                 alt="whatsapp logo"

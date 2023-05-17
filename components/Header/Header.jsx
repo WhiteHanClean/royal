@@ -8,7 +8,7 @@ import logoRoyal from "../../static/logoRoyal.png";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
-  
+
   return (
     <>
       <header className={s.header}>
@@ -28,14 +28,16 @@ const Header = () => {
             </ul>
           </div>
 
-          <div style={{padding: '8px'}}>
-            <Image
-              src={logoRoyal}
-              width={144}
-              height={45}
-              alt="logo"
-              placeholder="blur"
-            />
+          <div style={{ padding: '8px' }}>
+            <a href="https://royal.kg/" target="_blank">
+              <Image
+                src={logoRoyal}
+                width={144}
+                height={45}
+                alt="logo"
+                placeholder="blur"
+              />
+            </a>
           </div>
 
           <div className={s.header_item}>
