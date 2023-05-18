@@ -20,7 +20,7 @@ const Intro = () => {
     setTimeout(() => {
         setLoading(false)
         videoRef.current.autoplay = true;
-    },3400)
+    },3600)
   },[])
 
   const [offsetY, setOffsetY] = useState(0);
