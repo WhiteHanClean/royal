@@ -25,7 +25,9 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-
+a{
+  text-decoration: none;
+}
 ul,
 li {
   list-style: none;
