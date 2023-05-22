@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 const Location = () => {
     const mapURL = "https://yandex.ru/maps/-/CCUoiEv8gA"
 
-
     return (
         <>
             <div className={s.container}>

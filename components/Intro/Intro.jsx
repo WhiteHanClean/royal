@@ -10,11 +10,6 @@ const Intro = () => {
   const videoRef = useRef();
 
   const [loading, setLoading] = useState(true);
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
-  useEffect(() => {
-    setVideoLoaded(true)
-  }, [videoRef])
 
   useEffect(() => {
     setTimeout(() => {
@@ -47,7 +42,7 @@ const Intro = () => {
           autoPlay={true}
           style={{ width: "100%" }}
         >
-          <source src="/introV.mp4" />
+          <source src="/videa.mp4" />
         </video>
 
         <div className={s.home_bc}>
