@@ -20,7 +20,7 @@ export const AroundViewer = () => {
   useEffect(() => {
     getImage();
   }, []);
-  console.log(image);
+  
   return (
     <div className={styles.wrapper}>
       {image !== "" ? (
@@ -30,9 +30,7 @@ export const AroundViewer = () => {
           width={"100%"}
           container={"div"}
         />
-      ) : (
-        <h1>idi nahuy`ƒ</h1>
-      )}
+      ) : null}
     </div>
   );
 };
