@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import AnimatedTextCharacterParagraph from "../AnimatedText/AnimatedParagraph";
-import { motion } from "framer-motion";
 import s from "./Header.module.scss";
 import Sidebar from "../Sidebar/Sidebar";
 import logoRoyal from "../../static/logoRoyal.png";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
@@ -28,16 +28,14 @@ const Header = () => {
             </ul>
           </div>
 
-          <div style={{ padding: '8px' }}>
-            <a href="https://royal.kg/" target="_blank">
-              <Image
-                src={logoRoyal}
-                width={144}
-                height={45}
-                alt="logo"
-                placeholder="blur"
-              />
-            </a>
+          <div style={{ padding: "8px" }}>
+            <Image
+              src={logoRoyal}
+              width={144}
+              height={45}
+              alt="logo"
+              placeholder="blur"
+            />
           </div>
 
           <div className={s.header_item}>
@@ -54,24 +52,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <motion.div
-            className={s.burger}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, duration: 0.5 }}
-          >
-            <label htmlFor="check">
-              <input
-                type="checkbox"
-                id="check"
-                className={s.check}
-                onClick={() => setShowNav(!showNav)}
-              />
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          </motion.div>
+         <BurgerMenu showNav={showNav} setShowNav={setShowNav}/>
         </div>
       </header>
       {showNav && <Sidebar show={showNav} setShowNav={setShowNav} />}

@@ -27,7 +27,7 @@ const Intro = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   const handleVideoLoaded = () => {
     setVideoLoaded(true);
     videoRef.current.play(); // Запуск видео после загрузки
