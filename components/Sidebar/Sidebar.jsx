@@ -24,19 +24,6 @@ const Sidebar = ({ show, setShowNav }) => {
       transition={{ delay: 0.2, duration: 1 }}
       className={show ? cl(s.sidenav, s.active) : s.sidenav}
     >
-      <motion.div
-        className={s.closeBurger}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 3 }}
-      >
-        <motion.label htmlFor="check">
-          <input type="checkbox" id="check" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </motion.label>
-      </motion.div>
       <ul>
         <motion.li
           initial={{ y: -50, opacity: 0 }}

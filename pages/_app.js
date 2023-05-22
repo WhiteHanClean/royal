@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Loading from "@/components/Loading/Loading";
 
 export default function App({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
