@@ -4,7 +4,7 @@ import style from "./Landscaping.module.scss";
 
 const Landscaping = () => {
   return (
-    <div className={style.main}>
+    <section className={style.main}>
       <div className="container">
         <div className={style.title}>
           <motion.h2
@@ -60,7 +60,7 @@ const Landscaping = () => {
           </motion.div>
         </main>
       </div>
-    </div>
+    </section>
   );
 };
 

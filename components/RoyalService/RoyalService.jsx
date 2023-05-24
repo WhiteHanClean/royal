@@ -9,7 +9,7 @@ import Group from '../../public/Group.png'
 import zdanie from '../../public/zdanie.png'
 const RoyalService = () => {
   return (
-    <div className={s.royal_service} id="service">
+    <section className={s.royal_service} id="service">
       <div className={s.royalService}></div>
       <div className={s.bc_service}>
         <motion.div
@@ -121,7 +121,7 @@ const RoyalService = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

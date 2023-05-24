@@ -8,7 +8,7 @@ import Vector from "../../public/Vector.png";
 
 const ContactUs = ({text, text2}) => {
   return (
-    <div className={style.main}>
+    <section className={style.main}>
       <div className={style.background_opacity}></div>
       <div className="container">
         <motion.div
@@ -80,7 +80,7 @@ const ContactUs = ({text, text2}) => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

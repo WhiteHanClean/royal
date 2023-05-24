@@ -20,9 +20,9 @@ export const AroundViewer = () => {
   useEffect(() => {
     getImage();
   }, []);
-  
+
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       {image !== "" ? (
         <ReactPhotoSphereViewer
           src={image}
@@ -31,6 +31,6 @@ export const AroundViewer = () => {
           container={"div"}
         />
       ) : null}
-    </div>
+    </section>
   );
 };

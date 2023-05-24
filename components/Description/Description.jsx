@@ -18,7 +18,7 @@ import image10 from "../../assets/iconDescriptionTen.png";
 
 const Description = () => {
   return (
-    <div className={style.main}>
+    <section className={style.main}>
       <div className={style.main__background}></div>
       <div className={style.main__background_opacity}></div>
       <div className={style.main__blocks}>
@@ -177,7 +177,7 @@ const Description = () => {
           <h3>В подъезде 2 лифта европейского стандарта</h3>
         </motion.aside>
       </div>
-    </div>
+    </section>
   );
 };
 

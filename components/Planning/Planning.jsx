@@ -53,7 +53,7 @@ export const Planning = () => {
 
     return (
         <>
-            <div className={styles.wrapper} id='planning'>
+            <section className={styles.wrapper} id='planning'>
                 <motion.h1
                     initial="hidden"
                     whileInView="visible"
@@ -106,13 +106,13 @@ export const Planning = () => {
                     </Modal>
                     <FloatButton style={{width: '70px' , height: '70px' , top: '100px' , right: '70px' , zIndex: '1000' }} size="large" icon={<CloseOutlined/>}  onClick={() => setIsVisibleStageModal(false)}/>
                 </Modal>
-            </div>
-            <div className={styles.plannigWrapper}>
+            </section>
+            <section className={styles.plannigWrapper}>
                 {
                     Object.values(FLATS).map(flat => <FlatPlanning {...flat} />)
                 }
                 <hr />
-            </div>
+            </section>
         </>
     );
 };
