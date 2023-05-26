@@ -12,7 +12,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-image: url("../../assets/backgroundDescription.jpg");
+    background-image: url("../../assets/backgroundDescription.webp");
     background-size: cover;
     background-attachment: fixed;
   }
@@ -232,7 +232,7 @@
     justify-content: start !important;
     align-items: start !important;
     overflow: hidden !important;
-    background-image: url("../../assets/descriptionBackgroundTwo.jpg");
+    background-image: url("../../assets/descriptionBackgroundTwo.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -250px;
@@ -365,7 +365,7 @@
     justify-content: start !important;
     align-items: start !important;
     overflow: hidden !important;
-    background-image: url("../../assets/descriptionBackgroundTwo.jpg");
+    background-image: url("../../assets/descriptionBackgroundTwo.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -250px;
@@ -504,7 +504,7 @@
 @media screen and (min-width: 771px) and (max-width: 1024px) {
   .main {
     overflow: hidden !important;
-    background-image: url("../../assets/descriptionBackgroundTwo.jpg");
+    background-image: url("../../assets/descriptionBackgroundTwo.webp");
     background-repeat: no-repeat;
     background-size: cover;
 

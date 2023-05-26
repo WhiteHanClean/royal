@@ -2,13 +2,12 @@ import React from "react";
 import style from "./ContactUs.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import insta from "../../public/insta.png";
 import facebook from "../../public/facebook.png";
 import Vector from "../../public/Vector.png";
 
 const ContactUs = ({text, text2}) => {
   return (
-    <div className={style.main}>
+    <section className={style.main}>
       <div className={style.background_opacity}></div>
       <div className="container">
         <motion.div
@@ -34,7 +33,7 @@ const ContactUs = ({text, text2}) => {
             }}
             className={style.ellipse}
           >
-            <a href="https://www.instagram.com/direct/t/340282366841710300949128328353147599504">
+            <a href="https://www.instagram.com/direct/t/340282366841710300949128328353147599504" target="_blank">
               <Image src="/insta.png" alt="insta logo" width={46} height={46} />
             </a>
           </motion.div>
@@ -48,7 +47,7 @@ const ContactUs = ({text, text2}) => {
             }}
             className={style.ellipse}
           >
-            <a href="https://www.facebook.com/royalconstructionkg/">
+            <a href="https://www.facebook.com/royalconstructionkg/" target="_blank">
               <Image
                 src={facebook}
                 alt="facebook logo"
@@ -68,7 +67,7 @@ const ContactUs = ({text, text2}) => {
             }}
             className={style.ellipse}
           >
-            <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0">
+            <a href="https://api.whatsapp.com/send/?phone=996556111444&text=Здравствуйте,&type=phone_number&app_absent=0" target="_blank">
               <Image
                 src={Vector}
                 alt="whatsapp logo"
@@ -80,7 +79,7 @@ const ContactUs = ({text, text2}) => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

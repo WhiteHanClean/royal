@@ -24,8 +24,7 @@ const PlanningMobile = () => {
   const [scrollToZoom, setScrollToZoom] = React.useState(false);
 
   return (
-    <>
-      <div className={s.container} id="planning">
+      <section className={s.container} id="planning">
         <div className={s.planing}>
           <h1>Блок №1 план с 3 по 16 этажи</h1>
           <Image onClick={() => setOpen(true)} src={planing1} alt="planing1" />
@@ -53,8 +52,7 @@ const PlanningMobile = () => {
             scrollToZoom,
           }}
         />
-      </div>
-    </>
+      </section>
   );
 };
 

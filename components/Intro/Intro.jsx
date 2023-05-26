@@ -1,22 +1,24 @@
-import Image from "next/image";
-import React, { useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import AnimatedTextCharacterParagraph from "../AnimatedText/AnimatedParagraph";
 import AnimatedTextCharacter from "../AnimatedText/AnimatedText";
 import s from "./Intro.module.scss";
-import { motion } from "framer-motion";
-import { useRef, useEffect } from "react";
 import AnimatedLast from "../AnimatedText/AnimatedLast";
+import Loading from "@/components/Loading/Loading";
 
 const Intro = () => {
   const videoRef = useRef();
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
-      videoRef.current.play();
-    }, 5000);
+      setLoading(false);
+      videoRef.current.autoplay = true;
+    }, 3600);
   }, []);
 
   const [offsetY, setOffsetY] = useState(0);
+
   const handleScroll = () => {
     setOffsetY(window.pageYOffset);
   };
@@ -26,18 +28,27 @@ const Intro = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true);
+    videoRef.current.play(); // Запуск видео после загрузки
+    setLoading(false);
+  };
+
   return (
     <>
+      <Loading loading={loading} setLoading={setLoading} />
+
       <section className={s.home}>
         <video
           ref={videoRef}
           controls={false}
-          autoPlay
           muted
           loop
+          autoPlay={true}
           style={{ width: "100%" }}
+          onLoadedData={handleVideoLoaded}
         >
-          <source src="/introV.mp4" />
+          <source src="/videa.mp4" />
         </video>
 
         <div className={s.home_bc}>

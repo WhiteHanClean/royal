@@ -29,10 +29,8 @@ const Architecture = () => {
     React.useState(100);
   const [scrollToZoom, setScrollToZoom] = React.useState(false);
 
-  console.log(slide);
   return (
-    <>
-      <div className={s.container}>
+      <section className={s.container}>
         <div className={s.content} id="architecture">
           <motion.h1
             initial="hidden"
@@ -166,8 +164,7 @@ const Architecture = () => {
             }}
           />
         </div>
-      </div>
-    </>
+      </section>
   );
 };
 

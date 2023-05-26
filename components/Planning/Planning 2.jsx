@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal } from "antd";
 import Image from "next/image";
 import styles from './style.module.scss';
-import Brooklyn from '../../public/brooklyn.jpg';
+import Brooklyn from '../../public/brooklyn.webp';
 import StagePlan from '../../public/plan-stage.jpg';
 import { FlatPlanning } from "@/components/Planning/components/FlatPlanning/FlatPlanning";
 import { FLATS } from "@/constants/flat-constants";

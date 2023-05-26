@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination"
 import { Navigation, Pagination } from "swiper";
 import slide from '../../assets/slideLandscapingOne.jpg'
-import slideTwo from '../../assets/slideLandscapingTwo.jpg'
+import slideTwo from '../../assets/slideLandscapingTwo.webp'
 import slideThree from '../../assets/slideLandscapingThree.jpg'
 import slideFour from '../../assets/slideLandscapingFour.jpg'
 import Image from "next/image";

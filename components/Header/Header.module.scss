@@ -11,69 +11,12 @@
   right: 0;
   font-family: "Montserrat";
   z-index: 2000;
+
   @media (width <= 1213px) {
     padding: 0rem 2rem;
     max-width: 100%;
   }
 
-  .burger {
-    display: none;
-  }
-  @media (width <= 669px) {
-    & .burger {
-      display: flex;
-
-      label {
-        display: flex;
-        flex-direction: column;
-        width: 70px;
-        cursor: pointer;
-      }
-
-      label span {
-        background: #fff;
-        border-radius: 10px;
-        height: 4px;
-        margin: 7px 0;
-        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-      }
-
-      span:nth-of-type(1) {
-        width: 40%;
-        transform: rotatez(0deg) translate(0, 0) !important;
-      }
-
-      span:nth-of-type(2) {
-        width: 80%;
-        transform: rotatez(-0deg) !important;
-      }
-
-      span:nth-of-type(3) {
-        width: 55%;
-        transform: translate(0, -0) rotatez(0deg) !important;
-      }
-
-      input[type="checkbox"] {
-        display: none;
-      }
-
-      input[type="checkbox"]:checked ~ span:nth-of-type(1) {
-        transform-origin: bottom;
-        transform: rotatez(45deg) translate(8px, 1px);
-      }
-
-      input[type="checkbox"]:checked ~ span:nth-of-type(2) {
-        transform-origin: top;
-        transform: rotatez(-45deg);
-      }
-
-      input[type="checkbox"]:checked ~ span:nth-of-type(3) {
-        transform-origin: bottom;
-        width: 60%;
-        transform: translate(15px, -13px) rotatez(45deg);
-      }
-    }
-  }
   ul {
     display: flex;
     justify-content: space-around;
@@ -88,8 +31,8 @@
     position: relative;
     height: 100%;
   }
-  ul > li::before{
-    content: '';
+  ul > li::before {
+    content: "";
     width: 100%;
     background-color: #c8b552;
     height: 3px;
@@ -108,7 +51,7 @@
     line-height: 18px;
     color: #f4f3e3;
   }
-  li:hover::before{
+  li:hover::before {
     visibility: visible !important;
     transform: translate(0px);
     transition: 1s;
@@ -122,7 +65,7 @@
     height: 100%;
 
     .header_item {
-      @media (width <= 670px) {
+      @media screen and (max-width: 768px) {
         display: none;
       }
     }
