@@ -2,7 +2,6 @@ import React from "react";
 import style from "./ContactUs.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import insta from "../../public/insta.png";
 import facebook from "../../public/facebook.png";
 import Vector from "../../public/Vector.png";
 

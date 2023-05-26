@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import style from "./Description.module.scss";
 import Image from "next/image";
-import background from "../../assets/backgroundDescription.jpg";
-import backgroundTwo from "../../assets/descriptionBackgroundTwo.jpg";
 import logo from "../../assets/logo.png";
 import image1 from "../../assets/iconDescriptionOne.png";
 import image2 from "../../assets/iconDescriptionTwo.png";
